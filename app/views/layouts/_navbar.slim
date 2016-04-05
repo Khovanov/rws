@@ -1,0 +1,16 @@
+.navbar-fixed
+  nav.light-blue.lighten-1 role="navigation"
+    .nav-wrapper.container
+      a.brand-logo href="/" id="logo-container" RwS
+
+      ul.right.hide-on-med-and-down
+        li
+          = link_to 'Stations', railway_stations_path
+          
+      ul.side-nav id="nav-mobile"
+        li
+          = link_to 'Stations', railway_stations_path
+
+      a.button-collapse href="#" data-activates="nav-mobile" 
+        i.material-icons menu
+

@@ -1,0 +1,9 @@
+/ p#notice = notice
+
+p
+  strong Title:
+  = @railway_station.title
+
+= link_to 'Edit', edit_railway_station_path(@railway_station)
+'|
+= link_to 'Back', railway_stations_path
