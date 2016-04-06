@@ -9,4 +9,6 @@
   .field
     = f.label :title
     = f.text_field :title
-  .actions = f.submit
+    = link_to 'Back', railway_stations_path, class: 'waves-effect waves-light btn' 
+    =< f.submit(class: 'waves-effect waves-light btn')
+

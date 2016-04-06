@@ -1,27 +1,26 @@
-.container
-  .section
-    .row
-      .col.l12
+header
+  h3 Listing railway stations
 
-        h2 Listing railway stations
+/ section.section
+/   .row
+/     .col.l12
 
-        table
-          thead
-            tr
-              th Title
-              th
-              th
-              th
+table.striped
+  thead
+    tr
+      th Title
+      th
+      th
+      th
 
-          tbody
-            - @railway_stations.each do |railway_station|
-              tr
-                td = railway_station.title
-                td = link_to 'Show', railway_station
-                td = link_to 'Edit', edit_railway_station_path(railway_station)
-                td = link_to 'Destroy', railway_station, data: {:confirm => 'Are you sure?'}, :method => :delete
-
-        br
-
-        = link_to 'New Railway station', new_railway_station_path
+  tbody
+    - @railway_stations.each do |railway_station|
+      tr
+        td = railway_station.title
+        td = link_to 'Show', railway_station 
+        td = link_to 'Edit', edit_railway_station_path(railway_station)
+        td = link_to 'Destroy', railway_station, data: {:confirm => 'Are you sure?'}, :method => :delete
+br
+footer
+  = link_to 'New Railway station', new_railway_station_path, class: 'waves-effect waves-light btn'
   
