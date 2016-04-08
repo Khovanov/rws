@@ -1,0 +1,9 @@
+= form_for @train do |f|
+  = render 'common/errors', resource: @train
+  .row
+    .input-field.col
+      = f.label :number, class: "#{'active' if @train.number.present?}"
+      = f.text_field :number
+
+      = link_to 'Back', trains_path, class: 'waves-effect waves-light btn' 
+      =< f.submit(class: 'waves-effect waves-light btn')

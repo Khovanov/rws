@@ -1,0 +1,19 @@
+h3 Listing trains
+
+table.striped
+  thead
+    tr
+      th Number
+      th
+      th
+      th
+
+  tbody
+    - @trains.each do |train|
+      tr
+        td = train.number
+        td = link_to 'Show', train
+        td = link_to 'Edit', edit_train_path(train)
+        td = link_to 'Destroy', train, data: {confirm: 'Are you sure?'}, method: :delete
+
+p = link_to 'New Train', new_train_path, class: 'waves-effect waves-light btn'

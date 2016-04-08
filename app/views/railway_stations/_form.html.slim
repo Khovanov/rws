@@ -1,12 +1,5 @@
 = form_for @railway_station do |f|
-  - if @railway_station.errors.any?
-    .hide
-      #error_explanation
-        p = "#{pluralize(@railway_station.errors.count, "error")}:"
-        ul
-          - @railway_station.errors.full_messages.each do |message|
-            li = message
-
+  = render 'common/errors', resource: @railway_station
   .row
     .input-field.col
       = f.label :title , class: "#{'active' if @railway_station.title.present?}"
