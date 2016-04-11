@@ -13,19 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20160408103409) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "railway_stations", force: :cascade do |t|
-    t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "trains", force: :cascade do |t|
-    t.string   "number"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "number",     limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
