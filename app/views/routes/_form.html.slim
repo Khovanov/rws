@@ -1,0 +1,9 @@
+= form_for @route do |f|
+  = render 'common/errors', resource: @route
+  .row
+    .input-field.col
+      = f.label :name, class: "#{'active' if @route.name.present?}"
+      = f.text_field :name
+
+      = link_to 'Back', routes_path, class: 'waves-effect waves-light btn' 
+      =< f.submit(class: 'waves-effect waves-light btn')
