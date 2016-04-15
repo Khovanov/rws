@@ -15,7 +15,7 @@ class RoutesController < ApplicationController
   def create
     @route = Route.new(route_params)
     if @route.save
-      redirect_to @route
+      redirect_to @route, notice: 'Route was successfully created.' 
     else
       render :new
     end
@@ -26,7 +26,7 @@ class RoutesController < ApplicationController
 
   def update
     if @route.update(route_params)
-      redirect_to @route
+      redirect_to @route, notice: 'Route was successfully updated.' 
     else
       render :edit
     end
@@ -34,12 +34,12 @@ class RoutesController < ApplicationController
 
   def destroy
     @route.destroy
-    redirect_to routes_path
+    redirect_to routes_path, notice: 'Route was successfully destroyed.' 
   end
 
   private
   def route_params
-    params.require(:route).permit(:name)
+    params.require(:route).permit(:name, railway_station_ids: [])
   end
 
   def set_train

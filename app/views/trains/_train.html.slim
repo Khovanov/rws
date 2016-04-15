@@ -5,6 +5,14 @@ p
       = train.current_station.title 
   - else
       'none
+
+p 
+  'Route:
+  - if train.route.present?
+      = train.route.name 
+  - else
+      'none
+
 p 
   =< link_to 'Edit', edit_train_path(train)
   =< link_to 'Destroy', train, data: {confirm: 'Are you sure?'}, method: :delete

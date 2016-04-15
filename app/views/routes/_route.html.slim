@@ -1,4 +1,23 @@
 h4 = route.name
+
+p 
+  'Stations:
+  - if route.railway_stations.empty?
+      'none
+  - else
+      ul
+        - route.railway_stations.each do |station|
+            li = station.title
+
+p 
+  'Trains:
+  - if route.trains.empty?
+      'none
+  - else
+      ul
+        - route.trains.each do |train|
+            li = train.number
+
 p 
   =< link_to 'Edit', edit_route_path(route)
   =< link_to 'Destroy', route, data: {confirm: 'Are you sure?'}, method: :delete

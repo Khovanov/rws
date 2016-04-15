@@ -5,6 +5,11 @@
       = f.label :name, class: "#{'active' if @route.name.present?}"
       = f.text_field :name
 
+  .row
+    .field.input-field.col
+      = f.label :railway_station_ids, class: 'active'
+      = f.collection_select :railway_station_ids, RailwayStation.all, :id, :title, {}, { multiple: true } 
+
   .row  
     .col
       = link_to 'Back', routes_path, class: 'btn' 
