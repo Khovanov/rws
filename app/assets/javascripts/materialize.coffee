@@ -2,6 +2,7 @@ ready = ->
   $('.button-collapse').sideNav()
   $('.parallax').parallax()
   $('.modal-trigger').leanModal()
+  $('select').material_select()
 
   $notice = $('.notice')
   if ($notice.text() != '')

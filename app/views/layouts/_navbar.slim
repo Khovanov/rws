@@ -4,18 +4,8 @@ header.navbar-fixed role="banner"
       a.brand-logo href="/" id="logo-container" RwS
 
       ul.right.hide-on-med-and-down
-        li
-          = link_to 'Stations', railway_stations_path
-        li
-          = link_to 'Trains', trains_path
-        li
-          = link_to 'Routes', routes_path
+        = render "layouts/navlink"
       ul.side-nav id="nav-mobile"
-        li
-          = link_to 'Stations', railway_stations_path
-        li
-          = link_to 'Trains', trains_path
-        li
-          = link_to 'Routes', routes_path
+        = render "layouts/navlink"
       a.button-collapse href="#" data-activates="nav-mobile" 
         i.material-icons menu

@@ -1,10 +1,10 @@
 = form_for @railway_station do |f|
   = render 'common/errors', resource: @railway_station
   .row
-    .input-field.col
+    .col.field.input-field
       = f.label :title , class: "#{'active' if @railway_station.title.present?}"
       = f.text_field :title 
-
-      = link_to 'Back', railway_stations_path, class: 'waves-effect waves-light btn' 
-      =< f.submit(class: 'waves-effect waves-light btn')
-
+  .row  
+    .col
+      = link_to 'Back', railway_stations_path, class: 'btn' 
+      =< f.submit class: 'btn'

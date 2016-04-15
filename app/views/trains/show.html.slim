@@ -1,6 +1,9 @@
-h3 = @train.number
+h3 Train
 
-p =< link_to 'Back', trains_path, class: 'waves-effect waves-light btn'  
+= render @train 
+/ p = @train.number
+
+p =< link_to 'Back', trains_path, class: 'btn'  
 
 / = link_to 'Edit', edit_train_path(@train)
 / '|

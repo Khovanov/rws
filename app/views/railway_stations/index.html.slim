@@ -13,12 +13,14 @@ table.striped
       th
 
   tbody
-    - @railway_stations.each do |railway_station|
-      tr
-        td = railway_station.title
-        td = link_to 'Show', railway_station 
-        td = link_to 'Edit', edit_railway_station_path(railway_station)
-        td = link_to 'Destroy', railway_station, data: {confirm: 'Are you sure?'}, method: :delete
+    / = render @railway_stations
+    = render partial: 'railway_stations', collection: @railway_stations, as: 'railway_station'
+    / - @railway_stations.each do |railway_station|
+    /   tr
+    /     td = railway_station.title
+    /     td = link_to 'Show', railway_station 
+    /     td = link_to 'Edit', edit_railway_station_path(railway_station)
+    /     td = link_to 'Destroy', railway_station, data: {confirm: 'Are you sure?'}, method: :delete
 
 p = link_to 'New Railway station', new_railway_station_path, class: 'waves-effect waves-light btn'
   
