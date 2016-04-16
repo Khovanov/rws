@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160416182423) do
+ActiveRecord::Schema.define(version: 20160416192252) do
 
   create_table "railway_stations", force: :cascade do |t|
     t.string   "title",      limit: 255
@@ -29,6 +29,20 @@ ActiveRecord::Schema.define(version: 20160416182423) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "tickets", force: :cascade do |t|
+    t.integer  "user_id",          limit: 4
+    t.integer  "train_id",         limit: 4
+    t.integer  "start_station_id", limit: 4
+    t.integer  "end_station_id",   limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "tickets", ["end_station_id"], name: "index_tickets_on_end_station_id", using: :btree
+  add_index "tickets", ["start_station_id"], name: "index_tickets_on_start_station_id", using: :btree
+  add_index "tickets", ["train_id"], name: "index_tickets_on_train_id", using: :btree
+  add_index "tickets", ["user_id"], name: "index_tickets_on_user_id", using: :btree
 
   create_table "trains", force: :cascade do |t|
     t.string   "number",             limit: 255

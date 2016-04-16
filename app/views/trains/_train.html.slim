@@ -14,5 +14,15 @@ p
       'none
 
 p 
+  'Tickets:
+  - if train.tickets.empty?
+      'none
+  - else
+      ul
+        - train.tickets.each do |ticket|
+            li 
+              =< link_to "№ #{ticket.id}", ticket_path(ticket)
+
+p 
   =< link_to 'Edit', edit_train_path(train)
   =< link_to 'Destroy', train, data: {confirm: 'Are you sure?'}, method: :delete

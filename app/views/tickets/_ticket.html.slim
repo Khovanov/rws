@@ -1,0 +1,12 @@
+h4 = ticket.id
+
+p 
+  'User:
+  = ticket.user.try(:name)
+p 
+  'Train:
+  = ticket.train.try(:number)
+
+p 
+  =< link_to 'Edit', edit_ticket_path(ticket)
+  =< link_to 'Destroy', ticket, data: {confirm: 'Are you sure?'}, method: :delete

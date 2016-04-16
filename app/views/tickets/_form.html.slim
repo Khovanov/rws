@@ -1,0 +1,24 @@
+= form_for @ticket do |f|
+  = render 'common/errors', resource: @ticket
+
+  .row
+    .col.field.input-field
+      = f.label :user, class: 'active'
+      = f.collection_select :user_id, User.all, :id, :name, { prompt: true } 
+  .row
+    .col.field.input-field
+      = f.label :train, class: 'active'
+      = f.collection_select :train_id, Train.all, :id, :number, { prompt: true } 
+  .row
+    .col.field.input-field
+      = f.label :start_station, class: 'active'
+      = f.collection_select :start_station_id, RailwayStation.all, :id, :title, { prompt: true } 
+  .row
+    .col.field.input-field
+      = f.label :end_station, class: 'active'
+      = f.collection_select :end_station_id, RailwayStation.all, :id, :title, { prompt: true } 
+
+  .row  
+    .col
+      = link_to 'Back', tickets_path, class: 'btn' 
+      =< f.submit class: 'btn'
