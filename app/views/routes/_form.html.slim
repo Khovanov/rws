@@ -1,14 +1,14 @@
 = form_for @route do |f|
   = render 'common/errors', resource: @route
-  .row
-    .field.input-field.col
-      = f.label :name, class: "#{'active' if @route.name.present?}"
-      = f.text_field :name
+  / .row
+  /   .field.input-field.col
+  /     = f.label :name, class: "#{'active' if @route.name.present?}"
+  /     = f.text_field :name
 
   .row
     .field.input-field.col
-      = f.label :railway_station_ids, class: 'active'
-      = f.collection_select :railway_station_ids, RailwayStation.all, :id, :title, {}, { multiple: true } 
+      = f.label :railway_station, class: 'active'
+      = f.collection_select :railway_station_ids, RailwayStation.all, :id, :title, {prompt: true}, { multiple: true}
 
   .row  
     .col
