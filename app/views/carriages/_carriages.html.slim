@@ -1,0 +1,5 @@
+tr
+  td = carriage.number
+  td = link_to 'Show', carriage
+  td = link_to 'Edit', edit_carriage_path(carriage)
+  td = link_to 'Destroy', carriage, data: {confirm: 'Are you sure?'}, method: :delete

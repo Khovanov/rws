@@ -1,0 +1,13 @@
+h3 Listing carriages
+
+table.striped
+  thead
+    tr
+      th Number
+      th
+      th
+      th
+  tbody
+    = render partial: 'carriages', collection: @carriages, as: 'carriage'
+
+p = link_to 'New Carriage', new_carriage_path, class: 'btn'

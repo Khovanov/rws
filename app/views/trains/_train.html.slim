@@ -14,6 +14,21 @@ p
       'none
 
 p 
+  'Carriages:
+  - if train.carriages.present?
+      = train.carriages.size 
+  - else
+      'none
+
+p 
+  'Top seats:
+  = train.top_seats if train.carriages.present?
+
+p 
+  'Bottom seats:
+  = train.bottom_seats if train.carriages.present?
+
+p 
   'Tickets:
   - if train.tickets.empty?
       'none
