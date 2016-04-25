@@ -3,13 +3,26 @@ h4 = carriage.number
 p 
   'Train:
   = carriage.train.number
-p 
-  'Top seats:
-  = carriage.top_seats
 
-p 
-  'Bottom seats:
-  = carriage.bottom_seats
+- if carriage.top_seats
+  p 
+    'Top seats:
+    = carriage.top_seats
+
+- if carriage.bottom_seats
+  p 
+    'Bottom seats:
+    = carriage.bottom_seats
+
+- if carriage.side_top_seats
+  p 
+    'Side top seats:
+    = carriage.side_top_seats
+
+- if carriage.side_bottom_seats
+  p 
+    'Side bottom seats:
+    = carriage.side_bottom_seats
 
 p 
   =< link_to 'Edit', edit_carriage_path(carriage)

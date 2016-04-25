@@ -1,5 +1,7 @@
 h3 Carriage
 
-= render @carriage 
+/ # = render @carriage 
+= render partial:'carriage', locals: {carriage: @carriage}
 
-p =< link_to 'Back', carriages_path, class: 'btn'  
+/ # p =< link_to 'Back', carriages_path, class: 'btn'  
+p =< link_to 'Back', sti_carriage_path(@type), class: 'btn'

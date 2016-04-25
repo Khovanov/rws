@@ -6,6 +6,9 @@ class Train < ActiveRecord::Base
 
   validates :number, presence: true
 
+  # STI: for easer navigation between models 
+  delegate :coupes, :economies, to: :carriages
+
   def top_seats
     self.carriages.inject(0) { |sum, carriage| sum + carriage.top_seats }
   end

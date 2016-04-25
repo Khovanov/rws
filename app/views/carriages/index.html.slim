@@ -7,7 +7,11 @@ table.striped
       th
       th
       th
+      th
   tbody
     = render partial: 'carriages', collection: @carriages, as: 'carriage'
 
-p = link_to 'New Carriage', new_carriage_path, class: 'btn'
+p 
+  = link_to 'See all carriages', sti_carriage_path, class: 'btn' 
+  =< link_to "New #{@type}", sti_carriage_path(@type, nil, :new), class: 'btn'
+  / # p = link_to 'New Carriage', new_carriage_path, class: 'btn'

@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   resources :users
   resources :tickets
   resources :carriages
+  resources :coupe_carriages, controller: 'carriages', type: 'CoupeCarriage'
+  resources :economy_carriages, controller: 'carriages', type: 'EconomyCarriage'
+  resources :business_carriages, controller: 'carriages', type: 'BusinessCarriage'
+  resources :sitting_carriages, controller: 'carriages', type: 'SittingCarriage'
 
   get 'welcome/index'
 
