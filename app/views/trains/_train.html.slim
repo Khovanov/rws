@@ -14,19 +14,55 @@ p
       'none
 
 p 
-  'Carriages:
+  'Total carriages:
   - if train.carriages.present?
       = train.carriages.size 
   - else
       'none
 
-p 
-  'Top seats:
-  = train.top_seats if train.carriages.present?
+- if train.try(:coupes).present?
+  p 
+    'Coupe carriages:
+    = train.coupes.size 
+    br
+    'Top seats:
+    = train.seats('CoupeCarriage','top_seats') 
+    br
+    'Bottom seats:
+    = train.seats('CoupeCarriage','bottom_seats')
 
-p 
-  'Bottom seats:
-  = train.bottom_seats if train.carriages.present?
+- if train.try(:economies).present?
+  p 
+    'Economy carriages:
+    = train.economies.size 
+    br
+    'Top seats:
+    = train.seats('EconomyCarriage','top_seats') 
+    br
+    'Bottom seats:
+    = train.seats('EconomyCarriage','bottom_seats')
+    br
+    'Side top seats:
+    = train.seats('EconomyCarriage','side_top_seats')
+    br
+    'Side bottom seats:
+    = train.seats('EconomyCarriage','side_bottom_seats')
+
+- if train.try(:businesses).present?
+  p 
+    'Business carriages:
+    = train.businesses.size 
+    br
+    'Bottom seats:
+    = train.seats('BusinessCarriage','bottom_seats')
+
+- if train.try(:sittings).present?
+  p 
+    'Sittings carriages:
+    = train.sittings.size 
+    br
+    'Bottom seats:
+    = train.seats('SittingCarriage','bottom_seats')
 
 p 
   'Tickets:
