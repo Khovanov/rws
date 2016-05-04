@@ -2,12 +2,20 @@ h4 = route.name
 
 p 
   'Stations:
-  - if route.railway_stations.empty?
-      'none
-  - else
-      ul
-        - route.railway_stations.each do |station|
-            li = station.title
+
+- if route.railway_stations.empty?
+  'none
+- else
+  - route.railway_stations.ordered.each do |station|
+    .row
+      = form_tag update_order_railway_station_path(station), method: :patch do ||
+        .col.s4 
+          = station.title
+        .col.s4   
+          = hidden_field_tag :route_id, route.id
+          = number_field_tag :order, station.order_in(route), class: 'field input-field'
+        .col.s4
+          = submit_tag 'Change order', class: 'btn'
 
 p 
   'Trains:
