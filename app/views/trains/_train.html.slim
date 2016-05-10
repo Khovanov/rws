@@ -20,6 +20,14 @@ p
   - else
       'none
 
+- if train.carriages.present?
+  p 
+    'List carriages:
+  ul
+    - train.carriages.ordered.each do |carriage|
+      li 
+        =< link_to "№ #{carriage.number}", carriage_path(carriage)
+
 - if train.try(:coupes).present?
   p 
     'Coupe carriages:

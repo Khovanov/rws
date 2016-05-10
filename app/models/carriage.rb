@@ -3,6 +3,7 @@ class Carriage < ActiveRecord::Base
   
   validates :number, :train, presence: true
   validates :number, numericality: { only_integer: true }
+  validates :number, uniqueness: { scope: :train_id }
   # STI: 
   validates :type, presence: true
 
@@ -17,6 +18,11 @@ class Carriage < ActiveRecord::Base
   scope :businesses, -> { where(type: 'BusinessCarriage') }
   scope :sittings, -> { where(type: 'SittingCarriage') }
 
+  # scope :ordered, -> { order(train_id: :desc, number: :asc) }
+  scope :train_ordered, -> { joins(:train).order("`trains`.`number` desc", number: :asc) }
+  scope :ordered, -> { order(number: :asc) }
+  before_validation :set_number
+
   # STI: for easer navigation between models
   # add to model train.rb:
   # delegate :coupes, :economies, to: :carriages
@@ -29,4 +35,11 @@ class Carriage < ActiveRecord::Base
       %w(CoupeCarriage EconomyCarriage BusinessCarriage SittingCarriage)
     end
   end
+
+  def set_number
+    # last_number = Carriage.where(train: train).order(:number).last.try(:number)
+    last_number = Carriage.where(train: train).maximum(:number)
+    self.number ||= last_number ? last_number + 1 : 1
+  end
+
 end
