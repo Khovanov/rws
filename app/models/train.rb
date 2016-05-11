@@ -19,4 +19,10 @@ class Train < ActiveRecord::Base
     Carriage.where(type: carriage_type, train_id: self.id).sum("#{seat_type}")
   end
 
+  def carriages_order
+    # return carriages if self.ascending_carriages_order?
+    return carriages.ascending_number_order if self.ascending_carriages_order?
+    # return carriages.reverse
+    carriages.descending_number_order
+  end
 end

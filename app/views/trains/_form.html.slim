@@ -14,6 +14,11 @@
       = f.label :route, class: 'active'
       = f.collection_select :route_id, Route.all, :id, :name, { prompt: true } 
 
+  .row
+    .col.field
+      = f.check_box :ascending_carriages_order
+      = f.label :ascending_carriages_order 
+
   .row  
     .col
       = link_to 'Back', trains_path, class: 'btn' 

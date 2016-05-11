@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429131602) do
+ActiveRecord::Schema.define(version: 20160510115900) do
 
   create_table "carriages", force: :cascade do |t|
     t.integer  "number",            limit: 4
@@ -60,11 +60,12 @@ ActiveRecord::Schema.define(version: 20160429131602) do
   add_index "tickets", ["user_id"], name: "index_tickets_on_user_id", using: :btree
 
   create_table "trains", force: :cascade do |t|
-    t.string   "number",             limit: 255
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.integer  "current_station_id", limit: 4
-    t.integer  "route_id",           limit: 4
+    t.string   "number",                    limit: 255
+    t.datetime "created_at",                                           null: false
+    t.datetime "updated_at",                                           null: false
+    t.integer  "current_station_id",        limit: 4
+    t.integer  "route_id",                  limit: 4
+    t.boolean  "ascending_carriages_order",             default: true
   end
 
   create_table "users", force: :cascade do |t|

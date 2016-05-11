@@ -9,7 +9,7 @@ table.striped
       th
       th
   tbody
-    = render partial: 'carriages', collection: @carriages.train_ordered, as: 'carriage'
+    = render partial: 'carriages', collection: @carriages.train_order, as: 'carriage'
 
 p 
   = link_to 'See all carriages', sti_carriage_path, class: 'btn' 

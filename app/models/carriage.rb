@@ -19,8 +19,9 @@ class Carriage < ActiveRecord::Base
   scope :sittings, -> { where(type: 'SittingCarriage') }
 
   # scope :ordered, -> { order(train_id: :desc, number: :asc) }
-  scope :train_ordered, -> { joins(:train).order("`trains`.`number` desc", number: :asc) }
-  scope :ordered, -> { order(number: :asc) }
+  scope :train_order, -> { joins(:train).order("`trains`.`number` desc", number: :asc) }
+  scope :ascending_number_order, -> { order(number: :asc) }
+  scope :descending_number_order, -> { order(number: :desc) }
   before_validation :set_number
 
   # STI: for easer navigation between models
@@ -41,5 +42,4 @@ class Carriage < ActiveRecord::Base
     last_number = Carriage.where(train: train).maximum(:number)
     self.number ||= last_number ? last_number + 1 : 1
   end
-
 end
