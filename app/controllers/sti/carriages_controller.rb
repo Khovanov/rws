@@ -1,4 +1,4 @@
-class CarriagesController < ApplicationController
+class Sti::CarriagesController < ApplicationController
   before_action :set_carriage, only: [:show, :edit, :update, :destroy]
   before_action :set_type
 
@@ -18,7 +18,7 @@ class CarriagesController < ApplicationController
   def create
     @carriage = Carriage.new(carriage_params)
     if @carriage.save 
-      redirect_to @carriage, notice: "#{type_params} was successfully created." 
+      redirect_to [:sti, @carriage], notice: "#{type_params} was successfully created." 
     else
       render :new
     end
@@ -29,7 +29,7 @@ class CarriagesController < ApplicationController
 
   def update
     if @carriage.update(carriage_params)
-      redirect_to @carriage, notice: "#{type_params} was successfully updated."
+      redirect_to [:sti, @carriage], notice: "#{type_params} was successfully updated."
     else
       render :edit
     end
@@ -37,7 +37,7 @@ class CarriagesController < ApplicationController
 
   def destroy
     @carriage.destroy
-    redirect_to carriages_path, notice: "#{type_params} was successfully destroyed."
+    redirect_to sti_carriages_path, notice: "#{type_params} was successfully destroyed."
   end 
 
   private
