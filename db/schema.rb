@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160510115900) do
+ActiveRecord::Schema.define(version: 20160517082440) do
 
   create_table "carriages", force: :cascade do |t|
     t.integer  "number",            limit: 4
@@ -34,9 +34,11 @@ ActiveRecord::Schema.define(version: 20160510115900) do
   end
 
   create_table "railway_stations_routes", force: :cascade do |t|
-    t.integer "railway_station_id", limit: 4
-    t.integer "route_id",           limit: 4
-    t.integer "order",              limit: 4
+    t.integer  "railway_station_id", limit: 4
+    t.integer  "route_id",           limit: 4
+    t.integer  "order",              limit: 4
+    t.datetime "arrival_time"
+    t.datetime "departure_time"
   end
 
   create_table "routes", force: :cascade do |t|
