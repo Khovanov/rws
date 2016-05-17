@@ -35,6 +35,10 @@ class Carriage < ActiveRecord::Base
     def types
       %w(CoupeCarriage EconomyCarriage BusinessCarriage SittingCarriage)
     end
+
+    # def model_name
+    #   @@model_name ||= super
+    # end
   end
 
   def set_number

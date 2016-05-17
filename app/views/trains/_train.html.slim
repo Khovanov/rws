@@ -27,6 +27,13 @@ p
     - train.carriages_order.each do |carriage|
       li 
         =< link_to "№ #{carriage.number}", carriage_path(carriage)
+        =< link_to 'Edit', edit_carriage_path(carriage)
+        =< link_to 'Delete',
+                          carriage_path(carriage),
+                          method: :delete,
+                          data: {confirm: 'Are you sure?'} 
+
+p =< link_to 'Add carriage', new_train_carriage_path(train) 
 
 - if train.try(:coupes).present?
   p 

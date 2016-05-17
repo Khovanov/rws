@@ -23,7 +23,3 @@ p
   p 
     'Side bottom seats:
     = carriage.side_bottom_seats
-
-p 
-  =< link_to 'Edit', sti_carriage_helper_path(carriage.type, carriage, :edit)
-  =< link_to 'Destroy', sti_carriage_helper_path(carriage.type, carriage), data: {confirm: 'Are you sure?'}, method: :delete

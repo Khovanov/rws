@@ -1,6 +1,6 @@
 module StiCarriagesHelper
   
-  def sti_carriage_path(type = "carriage", carriage = nil, action = nil)
+  def sti_carriage_helper_path(type = "carriage", carriage = nil, action = nil)
     send "#{format_sti(action, type, carriage)}_path", carriage
   end
 

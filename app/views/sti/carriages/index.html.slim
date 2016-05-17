@@ -12,6 +12,6 @@ table.striped
     = render partial: 'carriages', collection: @carriages.train_order, as: 'carriage'
 
 p 
-  = link_to 'See all carriages', sti_carriage_path, class: 'btn' 
-  =< link_to "New #{@type}", sti_carriage_path(@type, nil, :new), class: 'btn'
+  = link_to 'See all carriages', sti_carriage_helper_path, class: 'btn' 
+  =< link_to "New #{@type}", sti_carriage_helper_path(@type, nil, :new), class: 'btn'
   / # p = link_to 'New Carriage', new_carriage_path, class: 'btn'

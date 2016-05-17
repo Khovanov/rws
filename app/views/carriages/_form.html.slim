@@ -1,14 +1,9 @@
-= form_for [:sti, @carriage] do |f|
+= form_for [@train, @carriage] do |f|
   = render 'common/errors', resource: @carriage
   .row
     .col.field.input-field
       = f.label :number, class: 'active'
       = f.text_field :number
-
-  .row
-    .col.field.input-field
-      = f.label :train, class: 'active'
-      = f.collection_select :train_id, Train.all, :id, :number, { prompt: true }
 
   .row
     .col.field.input-field
@@ -39,6 +34,5 @@
 
   .row  
     .col
-      / # = link_to 'Back', carriages_path, class: 'btn' 
-      = link_to 'Back', sti_carriage_helper_path(@type), class: 'btn' 
+      = link_to 'Back', train_path(@train || @carriage.train), class: 'btn' 
       =< f.submit class: 'btn'
