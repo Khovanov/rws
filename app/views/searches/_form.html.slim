@@ -31,4 +31,5 @@
           p 
             'departure_time:
             = route.start_station.departure_time(route)
-  
+          p
+            = link_to 'Buy ticket', new_train_ticket_path(train), class: 'btn'

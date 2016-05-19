@@ -1,5 +1,6 @@
 class TicketsController < ApplicationController
   before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+  before_action :set_train, only: [:new, :create]
 
   def index
     @tickets = Ticket.all
@@ -9,14 +10,18 @@ class TicketsController < ApplicationController
   end
 
   def new
-    @ticket = Ticket.new
+    # @ticket = Ticket.new
+    @ticket = @train.tickets.new
+    @ticket.start_station = @train.route.start_station
+    @ticket.end_station = @train.route.end_station
   end
 
   def edit
   end
 
   def create
-    @ticket = Ticket.new(ticket_params)
+    # @ticket = Ticket.new(ticket_params)
+    @ticket = @train.tickets.new(ticket_params)
     if @ticket.save 
       redirect_to @ticket, notice: 'Ticket was successfully created.' 
     else
@@ -43,7 +48,16 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
   end
 
+  def set_train
+    @train = Train.find(params[:train_id])
+  end
+
   def ticket_params
-    params.require(:ticket).permit(:user_id, :train_id, :start_station_id, :end_station_id)
+    params.require(:ticket).permit(:user_id, 
+                                   :train_id, 
+                                   :start_station_id, 
+                                   :end_station_id,
+                                   :full_name,
+                                   :passport)
   end
 end

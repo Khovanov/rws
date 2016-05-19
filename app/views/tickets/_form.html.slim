@@ -1,6 +1,15 @@
-= form_for @ticket do |f|
+/ # = form_for @ticket do |f|
+= form_for [@train, @ticket] do |f|
   = render 'common/errors', resource: @ticket
 
+  .row
+    .col.field.input-field
+      = f.label :full_name , class: 'active'
+      = f.text_field :full_name
+  .row
+    .col.field.input-field
+      = f.label :passport , class: 'active'
+      = f.text_field :passport
   .row
     .col.field.input-field
       = f.label :user, class: 'active'
@@ -17,7 +26,6 @@
     .col.field.input-field
       = f.label :end_station, class: 'active'
       = f.collection_select :end_station_id, RailwayStation.all, :id, :title, { prompt: true } 
-
   .row  
     .col
       = link_to 'Back', tickets_path, class: 'btn' 

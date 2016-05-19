@@ -3,11 +3,11 @@ h3 Listing tickets
 table.striped
   thead
     tr
-      th Id
+      th Stations
       th
       th
       th
   tbody
     = render partial: 'tickets', collection: @tickets, as: 'ticket'
 
-p = link_to 'New Ticket', new_ticket_path, class: 'btn'
+/ # p = link_to 'New Ticket', new_ticket_path, class: 'btn'

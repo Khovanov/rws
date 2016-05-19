@@ -3,12 +3,13 @@ Rails.application.routes.draw do
   resource :search, only: [:show]
   resources :trains do 
     resources :carriages, shallow: true
+    resources :tickets, shallow: true
   end  
   resources :railway_stations do
     patch :update_order, on: :member
   end
   resources :routes
-  resources :users
+  resources :users 
   resources :tickets
 
   namespace :sti do

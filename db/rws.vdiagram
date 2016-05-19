@@ -15,11 +15,11 @@
 				<^minimized value="0"/>
 				<^properties value="0"/>
 				<^triggers value="0"/>
-				<^uniques value="0"/>
+				<^uniques value="1"/>
 				<back_color value="B4D64700"/>
 				<name value="Table"/>
-				<position value="39;601"/>
-				<size value="195;158"/>
+				<position value="39;636"/>
+				<size value="195;176"/>
 				<sort_fields value="0"/>
 			</Properties>
 			<Type value="Table"/>
@@ -157,7 +157,7 @@
 				<back_color value="B4D64700"/>
 				<name value="Table6"/>
 				<position value="39;261"/>
-				<size value="210;286"/>
+				<size value="210;338"/>
 				<sort_fields value="0"/>
 			</Properties>
 			<Type value="Table"/>
@@ -185,8 +185,8 @@
 		<PageToolbarRB value="0"/>
 		<PageToolbarRight value="1"/>
 		<ScrollX value="0"/>
-		<ScrollY value="0"/>
-		<Selection value="VGFibGUy"/>
+		<ScrollY value="180"/>
+		<Selection value="VGFibGU="/>
 		<ShowAll value="1"/>
 		<ShowChanges value="1"/>
 		<ShowGL value="1"/>
@@ -788,7 +788,7 @@
 						</o1>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="50"/>
+						<Autoincrement value="35"/>
 						<Average_Row_Size value="3276"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
@@ -797,7 +797,6 @@
 						<Engine value="InnoDB"/>
 						<Field_Count value="10"/>
 						<Index_Count value="2"/>
-						<Link_Count value="0"/>
 						<Name value="carriages"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="5"/>
@@ -951,7 +950,6 @@
 						<Engine value="InnoDB"/>
 						<Field_Count value="4"/>
 						<Index_Count value="1"/>
-						<Link_Count value="0"/>
 						<Name value="railway_stations"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="4"/>
@@ -1180,7 +1178,6 @@
 						<Engine value="InnoDB"/>
 						<Field_Count value="7"/>
 						<Index_Count value="1"/>
-						<Link_Count value="0"/>
 						<Name value="trains"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="3"/>
@@ -1334,7 +1331,6 @@
 						<Engine value="InnoDB"/>
 						<Field_Count value="4"/>
 						<Index_Count value="1"/>
-						<Link_Count value="0"/>
 						<Name value="routes"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="3"/>
@@ -1537,6 +1533,56 @@
 							<delete value="0"/>
 							<name value="updated_at"/>
 						</o6>
+						<o7>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="8"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="full_name"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="full_name"/>
+						</o7>
+						<o8>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="9"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="passport"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="passport"/>
+						</o8>
 					</Fields>
 					<Indexes>
 						<o0>
@@ -1607,18 +1653,17 @@
 					</Indexes>
 					<Properties>
 						<Autoincrement value="7"/>
-						<Average_Row_Size value="4096"/>
+						<Average_Row_Size value="16384"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>
-						<Create_Time value="2016-04-16 19:33:49"/>
+						<Create_Time value="2016-05-19 11:47:46"/>
 						<Engine value="InnoDB"/>
-						<Field_Count value="7"/>
+						<Field_Count value="9"/>
 						<Index_Count value="5"/>
-						<Link_Count value="0"/>
 						<Name value="tickets"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="4"/>
+						<Record_Count value="1"/>
 						<Size value="80.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -1819,7 +1864,6 @@
 						<Engine value="InnoDB"/>
 						<Field_Count value="6"/>
 						<Index_Count value="1"/>
-						<Link_Count value="0"/>
 						<Name value="railway_stations_routes"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="20"/>
