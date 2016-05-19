@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resource :search, only: [:show]
   resources :trains do 
     resources :carriages, shallow: true
   end  

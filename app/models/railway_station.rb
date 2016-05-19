@@ -19,6 +19,14 @@ class RailwayStation < ActiveRecord::Base
     station_route(route).try(:order).to_i
   end
 
+  def departure_time(route)
+    station_route(route).try(:departure_time)
+  end
+
+  def arrival_time(route)
+    station_route(route).try(:arrival_time)
+  end
+
   private 
 
   def station_route(route)

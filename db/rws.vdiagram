@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+	<Controls>
+		<Table>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="5"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="0"/>
+				<back_color value="B4D64700"/>
+				<name value="Table"/>
+				<position value="39;601"/>
+				<size value="195;158"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table>
+		<Table1>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="3"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table1"/>
+				<position value="614;261"/>
+				<size value="230;302"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table1>
+		<Table2>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="7"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table2"/>
+				<position value="302;26"/>
+				<size value="259;212"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table2>
+		<Table3>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="1"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table3"/>
+				<position value="45;26"/>
+				<size value="204;176"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table3>
+		<Table4>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="4"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table4"/>
+				<position value="302;261"/>
+				<size value="259;214"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table4>
+		<Table5>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="2"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table5"/>
+				<position value="614;26"/>
+				<size value="230;176"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table5>
+		<Table6>
+			<Parent value="#TOP"/>
+			<Properties>
+				<^checks value="0"/>
+				<^group value="-1"/>
+				<^height value="-1"/>
+				<^indexes value="1"/>
+				<^level value="6"/>
+				<^links value="0"/>
+				<^lock value="0"/>
+				<^methods value="0"/>
+				<^minimized value="0"/>
+				<^properties value="0"/>
+				<^triggers value="0"/>
+				<^uniques value="1"/>
+				<back_color value="B4D64700"/>
+				<name value="Table6"/>
+				<position value="39;261"/>
+				<size value="210;286"/>
+				<sort_fields value="0"/>
+			</Properties>
+			<Type value="Table"/>
+		</Table6>
+		<rws>
+			<Properties>
+				<^lock value="0"/>
+				<back_color value="FFFFFF"/>
+				<gamma value="0"/>
+				<name value="rws"/>
+				<size value="2048;2048"/>
+				<style value="4"/>
+				<style_links value="0"/>
+				<units value="5"/>
+			</Properties>
+			<Type value="Diagram"/>
+		</rws>
+	</Controls>
+	<GUI>
+		<FullToolbarLeft value="1"/>
+		<FullToolbarRight value="1"/>
+		<PageEditor value="-1"/>
+		<PageEditorH value="0"/>
+		<PageToolbarLeft value="1"/>
+		<PageToolbarRB value="0"/>
+		<PageToolbarRight value="1"/>
+		<ScrollX value="0"/>
+		<ScrollY value="0"/>
+		<Selection value="VGFibGUy"/>
+		<ShowAll value="1"/>
+		<ShowChanges value="1"/>
+		<ShowGL value="1"/>
+		<ShowGrid value="1"/>
+		<UseGrid value="0"/>
+	</GUI>
+	<Model>
+		<rws_development>
+			<Links>
+				<o0>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="tickets"/>
+						<Foreign_Key value="start_station_id"/>
+						<Name value="lnk_railway_stations_tickets"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="railway_stations"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_railway_stations_tickets"/>
+				</o0>
+				<o1>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="tickets"/>
+						<Foreign_Key value="end_station_id"/>
+						<Name value="lnk_railway_stations_tickets_2"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="railway_stations"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_railway_stations_tickets_2"/>
+				</o1>
+				<o2>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="tickets"/>
+						<Foreign_Key value="train_id"/>
+						<Name value="lnk_trains_tickets"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="Cascade"/>
+						<Parent_Table value="trains"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_trains_tickets"/>
+				</o2>
+				<o3>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="tickets"/>
+						<Foreign_Key value="user_id"/>
+						<Name value="lnk_users_tickets"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="users"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_users_tickets"/>
+				</o3>
+				<o4>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="carriages"/>
+						<Foreign_Key value="train_id"/>
+						<Name value="lnk_trains_carriages"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="trains"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_trains_carriages"/>
+				</o4>
+				<o5>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="railway_stations_routes"/>
+						<Foreign_Key value="railway_station_id"/>
+						<Name value="lnk_railway_stations_railway_stations_routes"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="Cascade"/>
+						<Parent_Table value="railway_stations"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_railway_stations_railway_stations_routes"/>
+				</o5>
+				<o6>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="railway_stations_routes"/>
+						<Foreign_Key value="route_id"/>
+						<Name value="lnk_routes_railway_stations_routes"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="Cascade"/>
+						<Parent_Table value="routes"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_routes_railway_stations_routes"/>
+				</o6>
+				<o7>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="trains"/>
+						<Foreign_Key value="route_id"/>
+						<Name value="lnk_routes_trains"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="routes"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_routes_trains"/>
+				</o7>
+				<o8>
+					<Changes value=""/>
+					<Properties>
+						<Cardinality value="ONE to MANY"/>
+						<Child_Table value="trains"/>
+						<Foreign_Key value="current_station_id"/>
+						<Name value="lnk_railway_stations_trains"/>
+						<On_Delete value="Cascade"/>
+						<On_Update value="No Action"/>
+						<Parent_Table value="railway_stations"/>
+						<Primary_Key value="id"/>
+						<Type value="Foreign Key"/>
+					</Properties>
+					<control value=""/>
+					<delete value="0"/>
+					<name value="lnk_railway_stations_trains"/>
+				</o8>
+			</Links>
+			<Tables>
+				<o0>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="name"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="name"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o3>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="4"/>
+						<Average_Row_Size value="16384"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-04-16 18:25:31"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="4"/>
+						<Index_Count value="1"/>
+						<Link_Count value="0"/>
+						<Name value="users"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="1"/>
+						<Size value="16.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table"/>
+					<delete value="0"/>
+					<name value="users"/>
+				</o0>
+				<o1>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="number"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="number"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="type"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="type"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="top_seats"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="top_seats"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="5"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="bottom_seats"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="bottom_seats"/>
+						</o4>
+						<o5>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="6"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="train_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="train_id"/>
+						</o5>
+						<o6>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="7"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o6>
+						<o7>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="8"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o7>
+						<o8>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="9"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="side_top_seats"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="side_top_seats"/>
+						</o8>
+						<o9>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="10"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="side_bottom_seats"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="side_bottom_seats"/>
+						</o9>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="train_id"/>
+								<Name value="index_carriages_on_train_id"/>
+								<Type value="BTREE"/>
+								<Unique value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_carriages_on_train_id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o1>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="50"/>
+						<Average_Row_Size value="3276"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-04-18 09:51:44"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="10"/>
+						<Index_Count value="2"/>
+						<Link_Count value="0"/>
+						<Name value="carriages"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="5"/>
+						<Size value="32.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table1"/>
+					<delete value="0"/>
+					<name value="carriages"/>
+				</o1>
+				<o2>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="title"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="title"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o3>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="5"/>
+						<Average_Row_Size value="4096"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-04-09 20:55:03"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="4"/>
+						<Index_Count value="1"/>
+						<Link_Count value="0"/>
+						<Name value="railway_stations"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="4"/>
+						<Size value="16.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table3"/>
+					<delete value="0"/>
+					<name value="railway_stations"/>
+				</o2>
+				<o3>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="number"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="number"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="5"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="current_station_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="current_station_id"/>
+						</o4>
+						<o5>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="6"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="route_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="route_id"/>
+						</o5>
+						<o6>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value="1"/>
+								<Field_Position value="7"/>
+								<Indexed value="0"/>
+								<Length value="1"/>
+								<Name value="ascending_carriages_order"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="3"/>
+								<Scale value="0"/>
+								<Type value="TinyInt"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="ascending_carriages_order"/>
+						</o6>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="6"/>
+						<Average_Row_Size value="5461"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-05-11 08:54:24"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="7"/>
+						<Index_Count value="1"/>
+						<Link_Count value="0"/>
+						<Name value="trains"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="3"/>
+						<Size value="16.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table4"/>
+					<delete value="0"/>
+					<name value="trains"/>
+				</o3>
+				<o4>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="name"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="name"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o3>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="8"/>
+						<Average_Row_Size value="5461"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-04-11 17:59:51"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="4"/>
+						<Index_Count value="1"/>
+						<Link_Count value="0"/>
+						<Name value="routes"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="3"/>
+						<Size value="16.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table5"/>
+					<delete value="0"/>
+					<name value="routes"/>
+				</o4>
+				<o5>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="user_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="user_id"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="train_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="train_id"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="start_station_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="start_station_id"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="5"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="end_station_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="end_station_id"/>
+						</o4>
+						<o5>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="6"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="created_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="created_at"/>
+						</o5>
+						<o6>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="7"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="updated_at"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="updated_at"/>
+						</o6>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="end_station_id"/>
+								<Name value="index_tickets_on_end_station_id"/>
+								<Type value="BTREE"/>
+								<Unique value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_tickets_on_end_station_id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="start_station_id"/>
+								<Name value="index_tickets_on_start_station_id"/>
+								<Type value="BTREE"/>
+								<Unique value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_tickets_on_start_station_id"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="train_id"/>
+								<Name value="index_tickets_on_train_id"/>
+								<Type value="BTREE"/>
+								<Unique value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_tickets_on_train_id"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="user_id"/>
+								<Name value="index_tickets_on_user_id"/>
+								<Type value="BTREE"/>
+								<Unique value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_tickets_on_user_id"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o4>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="7"/>
+						<Average_Row_Size value="4096"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-04-16 19:33:49"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="7"/>
+						<Index_Count value="5"/>
+						<Link_Count value="0"/>
+						<Name value="tickets"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="4"/>
+						<Size value="80.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table6"/>
+					<delete value="0"/>
+					<name value="tickets"/>
+				</o5>
+				<o6>
+					<Changes value=""/>
+					<Fields>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="1"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="1"/>
+								<Indexed value="1"/>
+								<Length value="11"/>
+								<Name value="id"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="id"/>
+						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="2"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="railway_station_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="railway_station_id"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="3"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="route_id"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="route_id"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="4"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="order"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="order"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="5"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="arrival_time"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="arrival_time"/>
+						</o4>
+						<o5>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="6"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="departure_time"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="departure_time"/>
+						</o5>
+					</Fields>
+					<Indexes>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Indexes>
+					<Properties>
+						<Autoincrement value="23"/>
+						<Average_Row_Size value="819"/>
+						<Charset value="utf8"/>
+						<Collation value="utf8_unicode_ci"/>
+						<Comment value=""/>
+						<Create_Time value="2016-05-17 08:29:38"/>
+						<Engine value="InnoDB"/>
+						<Field_Count value="6"/>
+						<Index_Count value="1"/>
+						<Link_Count value="0"/>
+						<Name value="railway_stations_routes"/>
+						<Primary_Key value="id"/>
+						<Record_Count value="20"/>
+						<Size value="16.00 KiB"/>
+						<Trigger_Count value="0"/>
+						<Unique_Count value="1"/>
+						<Update_Time value=""/>
+					</Properties>
+					<Uniques>
+						<o0>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="id"/>
+								<Name value="PRIMARY"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="PRIMARY"/>
+						</o0>
+					</Uniques>
+					<control value="Table2"/>
+					<delete value="0"/>
+					<name value="railway_stations_routes"/>
+				</o6>
+			</Tables>
+		</rws_development>
+	</Model>
+	<Scene>
+		<HeightPX value="2048"/>
+		<WidthPX value="2048"/>
+	</Scene>
+	<version value="60502"/>
+</properties>
+
