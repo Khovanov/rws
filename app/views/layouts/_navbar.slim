@@ -2,10 +2,21 @@ header.navbar-fixed role="banner"
   nav.light-blue.lighten-1 role="navigation"
     .nav-wrapper.container
       a.brand-logo href="/" id="logo-container" RwS
+      ul.right
+          - if user_signed_in?
+            li
+              = link_to "Exit | #{current_user.name}", 
+                  destroy_user_session_path, method: :delete
+          - else
+            li
+              = link_to 'Sign in', new_user_session_path
 
       ul.right.hide-on-med-and-down
         = render "layouts/navlink"
+
+        
       ul.side-nav id="nav-mobile"
         = render "layouts/navlink"
+
       a.button-collapse href="#" data-activates="nav-mobile" 
         i.material-icons menu

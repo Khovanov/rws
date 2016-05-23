@@ -19,7 +19,7 @@
 				<back_color value="B4D64700"/>
 				<name value="Table"/>
 				<position value="39;636"/>
-				<size value="195;176"/>
+				<size value="195;626"/>
 				<sort_fields value="0"/>
 			</Properties>
 			<Type value="Table"/>
@@ -185,7 +185,7 @@
 		<PageToolbarRB value="0"/>
 		<PageToolbarRight value="1"/>
 		<ScrollX value="0"/>
-		<ScrollY value="180"/>
+		<ScrollY value="0"/>
 		<Selection value="VGFibGU="/>
 		<ShowAll value="1"/>
 		<ShowChanges value="1"/>
@@ -404,6 +404,256 @@
 							<delete value="0"/>
 							<name value="name"/>
 						</o1>
+						<o10>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="11"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="current_sign_in_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="current_sign_in_at"/>
+						</o10>
+						<o11>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="12"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="last_sign_in_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="last_sign_in_at"/>
+						</o11>
+						<o12>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="13"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="current_sign_in_ip"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="current_sign_in_ip"/>
+						</o12>
+						<o13>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="14"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="last_sign_in_ip"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="last_sign_in_ip"/>
+						</o13>
+						<o14>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="15"/>
+								<Indexed value="1"/>
+								<Length value="255"/>
+								<Name value="confirmation_token"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="confirmation_token"/>
+						</o14>
+						<o15>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="16"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="confirmed_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="confirmed_at"/>
+						</o15>
+						<o16>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="17"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="confirmation_sent_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="confirmation_sent_at"/>
+						</o16>
+						<o17>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="18"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="unconfirmed_email"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="unconfirmed_email"/>
+						</o17>
+						<o18>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value="0"/>
+								<Field_Position value="19"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="failed_attempts"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="failed_attempts"/>
+						</o18>
+						<o19>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="20"/>
+								<Indexed value="1"/>
+								<Length value="255"/>
+								<Name value="unlock_token"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="unlock_token"/>
+						</o19>
 						<o2>
 							<Changes value=""/>
 							<Properties>
@@ -429,6 +679,31 @@
 							<delete value="0"/>
 							<name value="created_at"/>
 						</o2>
+						<o20>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="21"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="locked_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="locked_at"/>
+						</o20>
 						<o3>
 							<Changes value=""/>
 							<Properties>
@@ -454,6 +729,156 @@
 							<delete value="0"/>
 							<name value="updated_at"/>
 						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="5"/>
+								<Indexed value="1"/>
+								<Length value="255"/>
+								<Name value="email"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="email"/>
+						</o4>
+						<o5>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="6"/>
+								<Indexed value="0"/>
+								<Length value="255"/>
+								<Name value="encrypted_password"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="encrypted_password"/>
+						</o5>
+						<o6>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value="utf8"/>
+								<Collation value="utf8_unicode_ci"/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="7"/>
+								<Indexed value="1"/>
+								<Length value="255"/>
+								<Name value="reset_password_token"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="VarChar"/>
+								<Unique value="1"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="reset_password_token"/>
+						</o6>
+						<o7>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="8"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="reset_password_sent_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="reset_password_sent_at"/>
+						</o7>
+						<o8>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value=""/>
+								<Field_Position value="9"/>
+								<Indexed value="0"/>
+								<Length value="-1"/>
+								<Name value="remember_created_at"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="0"/>
+								<Scale value="0"/>
+								<Type value="DateTime"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="remember_created_at"/>
+						</o8>
+						<o9>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value="0"/>
+								<Field_Position value="10"/>
+								<Indexed value="0"/>
+								<Length value="11"/>
+								<Name value="sign_in_count"/>
+								<Nullable value="0"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="10"/>
+								<Scale value="0"/>
+								<Type value="Int"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="sign_in_count"/>
+						</o9>
 					</Fields>
 					<Indexes>
 						<o0>
@@ -469,6 +894,58 @@
 							<delete value="0"/>
 							<name value="PRIMARY"/>
 						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="confirmation_token"/>
+								<Name value="index_users_on_confirmation_token"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_confirmation_token"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="email"/>
+								<Name value="index_users_on_email"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_email"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="reset_password_token"/>
+								<Name value="index_users_on_reset_password_token"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_reset_password_token"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Comment value=""/>
+								<Fields value="unlock_token"/>
+								<Name value="index_users_on_unlock_token"/>
+								<Type value="BTREE"/>
+								<Unique value="1"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_unlock_token"/>
+						</o4>
 					</Indexes>
 					<Properties>
 						<Autoincrement value="4"/>
@@ -476,17 +953,17 @@
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>
-						<Create_Time value="2016-04-16 18:25:31"/>
+						<Create_Time value="2016-05-20 10:05:19"/>
 						<Engine value="InnoDB"/>
-						<Field_Count value="4"/>
-						<Index_Count value="1"/>
+						<Field_Count value="21"/>
+						<Index_Count value="5"/>
 						<Link_Count value="0"/>
 						<Name value="users"/>
 						<Primary_Key value="id"/>
 						<Record_Count value="1"/>
-						<Size value="16.00 KiB"/>
+						<Size value="80.00 KiB"/>
 						<Trigger_Count value="0"/>
-						<Unique_Count value="1"/>
+						<Unique_Count value="5"/>
 						<Update_Time value=""/>
 					</Properties>
 					<Uniques>
@@ -500,6 +977,46 @@
 							<delete value="0"/>
 							<name value="PRIMARY"/>
 						</o0>
+						<o1>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="confirmation_token"/>
+								<Name value="index_users_on_confirmation_token"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_confirmation_token"/>
+						</o1>
+						<o2>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="email"/>
+								<Name value="index_users_on_email"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_email"/>
+						</o2>
+						<o3>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="reset_password_token"/>
+								<Name value="index_users_on_reset_password_token"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_reset_password_token"/>
+						</o3>
+						<o4>
+							<Changes value=""/>
+							<Properties>
+								<Fields value="unlock_token"/>
+								<Name value="index_users_on_unlock_token"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="index_users_on_unlock_token"/>
+						</o4>
 					</Uniques>
 					<control value="Table"/>
 					<delete value="0"/>
@@ -799,7 +1316,6 @@
 						<Index_Count value="2"/>
 						<Name value="carriages"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="5"/>
 						<Size value="32.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -952,7 +1468,6 @@
 						<Index_Count value="1"/>
 						<Name value="railway_stations"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="4"/>
 						<Size value="16.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -1180,7 +1695,6 @@
 						<Index_Count value="1"/>
 						<Name value="trains"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="3"/>
 						<Size value="16.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -1333,7 +1847,6 @@
 						<Index_Count value="1"/>
 						<Name value="routes"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="3"/>
 						<Size value="16.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -1652,8 +2165,8 @@
 						</o4>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="7"/>
-						<Average_Row_Size value="16384"/>
+						<Autoincrement value="12"/>
+						<Average_Row_Size value="4096"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>
@@ -1663,7 +2176,6 @@
 						<Index_Count value="5"/>
 						<Name value="tickets"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="1"/>
 						<Size value="80.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>
@@ -1866,7 +2378,6 @@
 						<Index_Count value="1"/>
 						<Name value="railway_stations_routes"/>
 						<Primary_Key value="id"/>
-						<Record_Count value="20"/>
 						<Size value="16.00 KiB"/>
 						<Trigger_Count value="0"/>
 						<Unique_Count value="1"/>

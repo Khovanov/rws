@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resource :search, only: [:show]
   resources :trains do 
     resources :carriages, shallow: true
