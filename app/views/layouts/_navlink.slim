@@ -1,14 +1,16 @@
 li
   = link_to 'Search', search_path
 li
-  = link_to 'Stations', railway_stations_path
-li
-  = link_to 'Trains', trains_path
-li
-  = link_to 'Routes', routes_path
-li
-  = link_to 'Users', users_path
-li
-  = link_to 'Tickets', tickets_path
-li
-  = link_to 'Carriages', sti_carriages_path
+  = link_to 'Tickets', current_user.try(:admin?) ? admin_tickets_path : tickets_path
+
+- if current_user.try(:admin?)
+  li
+    = link_to 'Stations', admin_railway_stations_path
+  li
+    = link_to 'Trains', admin_trains_path
+  li
+    = link_to 'Routes', admin_routes_path
+  li
+    = link_to 'Carriages', sti_carriages_path
+  li
+    = link_to 'Users', admin_users_path  

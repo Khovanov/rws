@@ -1,0 +1,14 @@
+h3 Listing routes
+
+table.striped
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    = render partial: 'routes', collection: @routes, as: 'route'
+
+p = link_to 'New Route', new_admin_route_path, class: 'btn'

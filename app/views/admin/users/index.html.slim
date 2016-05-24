@@ -1,0 +1,13 @@
+h3 Listing users
+
+table.striped
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+  tbody
+    = render partial: 'users', collection: @users, as: 'user'
+
+p = link_to 'New User', new_admin_user_path, class: 'btn'

@@ -1,0 +1,14 @@
+h3 Listing trains
+
+table.striped
+  thead
+    tr
+      th Number
+      th
+      th
+      th
+  tbody
+    / = render @trains
+    = render partial: 'trains', collection: @trains, as: 'train'
+
+p = link_to 'New Train', new_admin_train_path, class: 'btn'

@@ -1,0 +1,5 @@
+tr
+  td = railway_station.title
+  td = link_to 'Show', admin_railway_station_path(railway_station) 
+  td = link_to 'Edit', edit_admin_railway_station_path(railway_station)
+  td = link_to 'Destroy', admin_railway_station_path(railway_station), data: {confirm: 'Are you sure?'}, method: :delete

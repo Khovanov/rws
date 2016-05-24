@@ -1,0 +1,31 @@
+h4 = route.name
+
+p 
+  'Stations:
+
+- if route.railway_stations.empty?
+  'none
+- else
+  - route.railway_stations.ordered.each do |station|
+    .row
+      = form_tag update_order_admin_railway_station_path(station), method: :patch do ||
+        .col.s4 
+          = station.title
+        .col.s4   
+          = hidden_field_tag :route_id, route.id
+          = number_field_tag :order, station.order_in(route), class: 'field input-field'
+        .col.s4
+          = submit_tag 'Change order', class: 'btn'
+
+p 
+  'Trains:
+  - if route.trains.empty?
+      'none
+  - else
+      ul
+        - route.trains.each do |train|
+            li = train.number
+
+p 
+  =< link_to 'Edit', edit_admin_route_path(route)
+  =< link_to 'Destroy', admin_route_path(route), data: {confirm: 'Are you sure?'}, method: :delete

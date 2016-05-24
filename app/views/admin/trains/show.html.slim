@@ -1,0 +1,10 @@
+h3 Train
+
+= render @train 
+/ p = @train.number
+
+p =< link_to 'Back', admin_trains_path, class: 'btn'  
+
+/ = link_to 'Edit', edit_train_path(@train)
+/ '|
+/ = link_to 'Back', trains_path

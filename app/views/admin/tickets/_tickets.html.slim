@@ -1,0 +1,7 @@
+tr
+  td = "(#{ticket.id}) #{ticket.user.name} #{ticket.start_station.title} #{ticket.end_station.title}"
+  td = link_to 'Show', admin_ticket_path(ticket)
+  td = link_to 'Edit', edit_admin_ticket_path(ticket)
+  td = link_to 'Destroy', admin_ticket_path(ticket), 
+          data: {confirm: 'Are you sure?'}, 
+          method: :delete

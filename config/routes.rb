@@ -2,16 +2,11 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { sessions: 'sessions' }
   resource :search, only: [:show]
-  resources :trains do 
-    resources :carriages, shallow: true
-    resources :tickets, shallow: true
-  end  
-  resources :railway_stations do
-    patch :update_order, on: :member
+
+  resources :trains, only: [] do
+    resources :tickets, except: [:index], shallow: true
   end
-  resources :routes
-  resources :users 
-  resources :tickets
+  resources :tickets, only: [:index]
 
   namespace :sti do
     resources :carriages
@@ -20,6 +15,19 @@ Rails.application.routes.draw do
     resources :business_carriages, controller: 'carriages', type: 'BusinessCarriage'
     resources :sitting_carriages, controller: 'carriages', type: 'SittingCarriage'
   end
+
+  namespace :admin do
+    resources :trains do 
+      resources :carriages, shallow: true
+    end  
+    resources :railway_stations do
+      patch :update_order, on: :member
+    end
+    resources :routes
+    resources :users
+    resources :tickets 
+  end
+
 
   get 'welcome/index'
 

@@ -1,0 +1,5 @@
+tr
+  td = train.number
+  td = link_to 'Show', admin_train_path(train)
+  td = link_to 'Edit', edit_admin_train_path(train)
+  td = link_to 'Destroy', admin_train_path(train), data: {confirm: 'Are you sure?'}, method: :delete

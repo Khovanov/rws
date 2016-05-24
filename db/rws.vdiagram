@@ -704,6 +704,31 @@
 							<delete value="0"/>
 							<name value="locked_at"/>
 						</o20>
+						<o21>
+							<Changes value=""/>
+							<Properties>
+								<Autoincrement value="0"/>
+								<Charset value=""/>
+								<Collation value=""/>
+								<Comment value=""/>
+								<Default_Value value="0"/>
+								<Field_Position value="22"/>
+								<Indexed value="0"/>
+								<Length value="1"/>
+								<Name value="admin"/>
+								<Nullable value="1"/>
+								<On_Update_Set_Current value="0"/>
+								<Precision value="3"/>
+								<Scale value="0"/>
+								<Type value="TinyInt"/>
+								<Unique value="0"/>
+								<Unsigned value="0"/>
+								<Zerofill value="0"/>
+							</Properties>
+							<control value=""/>
+							<delete value="0"/>
+							<name value="admin"/>
+						</o21>
 						<o3>
 							<Changes value=""/>
 							<Properties>
@@ -948,14 +973,14 @@
 						</o4>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="4"/>
+						<Autoincrement value="20"/>
 						<Average_Row_Size value="16384"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>
-						<Create_Time value="2016-05-20 10:05:19"/>
+						<Create_Time value="2016-05-23 08:32:13"/>
 						<Engine value="InnoDB"/>
-						<Field_Count value="21"/>
+						<Field_Count value="22"/>
 						<Index_Count value="5"/>
 						<Link_Count value="0"/>
 						<Name value="users"/>
@@ -1305,7 +1330,7 @@
 						</o1>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="35"/>
+						<Autoincrement value="36"/>
 						<Average_Row_Size value="3276"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
@@ -1457,7 +1482,7 @@
 						</o0>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="5"/>
+						<Autoincrement value="7"/>
 						<Average_Row_Size value="4096"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
@@ -1684,7 +1709,7 @@
 						</o0>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="6"/>
+						<Autoincrement value="8"/>
 						<Average_Row_Size value="5461"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
@@ -1836,8 +1861,8 @@
 						</o0>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="8"/>
-						<Average_Row_Size value="5461"/>
+						<Autoincrement value="16"/>
+						<Average_Row_Size value="1638"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>
@@ -2367,8 +2392,8 @@
 						</o0>
 					</Indexes>
 					<Properties>
-						<Autoincrement value="23"/>
-						<Average_Row_Size value="819"/>
+						<Autoincrement value="34"/>
+						<Average_Row_Size value="606"/>
 						<Charset value="utf8"/>
 						<Collation value="utf8_unicode_ci"/>
 						<Comment value=""/>

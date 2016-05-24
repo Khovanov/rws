@@ -1,5 +1,4 @@
-class Sti::CarriagesController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+class Sti::CarriagesController < Admin::BaseController
   before_action :set_carriage, only: [:show, :edit, :update, :destroy]
   before_action :set_type
 

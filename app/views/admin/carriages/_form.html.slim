@@ -1,0 +1,38 @@
+= form_for [:admin, @train, @carriage] do |f|
+  = render 'common/errors', resource: @carriage
+  .row
+    .col.field.input-field
+      = f.label :number, class: 'active'
+      = f.text_field :number
+
+  .row
+    .col.field.input-field
+      = f.label :type, class: 'active'
+      / # = f.select :type, Carriage.types.map {|r| [r.humanize, r.camelcase]}, {}, disabled: @type!= "Carriage"
+      = f.select :type, Carriage.types
+
+  .row
+    .col.field.input-field
+      = f.label :top_seats, class: 'active'
+      = f.text_field :top_seats
+
+  .row
+    .col.field.input-field
+      = f.label :bottom_seats, class: 'active'
+      / # = f.text_field :bottom_seats, disabled: true     
+      = f.text_field :bottom_seats     
+
+  .row
+    .col.field.input-field
+      = f.label :side_top_seats, class: 'active'
+      = f.text_field :side_top_seats
+
+  .row
+    .col.field.input-field
+      = f.label :side_bottom_seats, class: 'active'
+      = f.text_field :side_bottom_seats  
+
+  .row  
+    .col
+      = link_to 'Back', admin_train_path(@train || @carriage.train), class: 'btn' 
+      =< f.submit class: 'btn'
