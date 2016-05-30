@@ -1,5 +1,5 @@
 tr
   td = railway_station.title
-  td = link_to 'Show', admin_railway_station_path(railway_station) 
-  td = link_to 'Edit', edit_admin_railway_station_path(railway_station)
-  td = link_to 'Destroy', admin_railway_station_path(railway_station), data: {confirm: 'Are you sure?'}, method: :delete
+  td = link_to t('common.show'), admin_railway_station_path(railway_station) 
+  td = link_to t('common.edit'), edit_admin_railway_station_path(railway_station)
+  td = link_to t('common.destroy'), admin_railway_station_path(railway_station), data: {confirm: t('admin.railway_stations.common.confirm')}, method: :delete

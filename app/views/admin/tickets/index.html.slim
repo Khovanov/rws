@@ -1,13 +1,13 @@
-h3 Listing tickets
+h3 = t('.title')
 
 table.striped
   thead
     tr
-      th Stations
+      th = t('activerecord.models.ticket')
       th
       th
       th
   tbody
     = render partial: 'tickets', collection: @tickets, as: 'ticket'
 
-p = link_to 'New Ticket', new_admin_ticket_path, class: 'btn'
+p = link_to t('.new'), new_admin_ticket_path, class: 'btn'

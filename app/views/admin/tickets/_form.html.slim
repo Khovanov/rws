@@ -27,5 +27,5 @@
       = f.collection_select :end_station_id, RailwayStation.all, :id, :title, { prompt: true } 
   .row  
     .col
-      = link_to 'Back', admin_tickets_path, class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), admin_tickets_path, class: 'btn' 
+      =< f.submit t('.submit', action: @ticket.new_record? ? t('common.create') : t('common.update')), class: 'btn'

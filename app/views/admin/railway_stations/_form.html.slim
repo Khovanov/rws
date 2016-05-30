@@ -6,5 +6,5 @@
       = f.text_field :title 
   .row  
     .col
-      = link_to 'Back', admin_railway_stations_path, class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), admin_railway_stations_path, class: 'btn' 
+      =< f.submit t('.submit', action: @railway_station.new_record? ? t('common.create') : t('common.update')), class: 'btn'

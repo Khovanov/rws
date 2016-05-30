@@ -34,5 +34,5 @@
 
   .row  
     .col
-      = link_to 'Back', admin_train_path(@train || @carriage.train), class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), admin_train_path(@train || @carriage.train), class: 'btn' 
+      =< f.submit t('.submit', action: @carriage.new_record? ? t('common.create') : t('common.update')), class: 'btn'

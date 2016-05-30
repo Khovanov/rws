@@ -7,10 +7,10 @@
 
   .row
     .field.input-field.col
-      = f.label :railway_station, class: 'active'
+      = f.label :railway_station, t('activerecord.models.railway_station'),class: 'active'
       = f.collection_select :railway_station_ids, RailwayStation.all, :id, :title, {prompt: true}, { multiple: true}
 
   .row  
     .col
-      = link_to 'Back', admin_routes_path, class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), admin_routes_path, class: 'btn' 
+      =< f.submit t('.submit', action: @route.new_record? ? t('common.create') : t('common.update')), class: 'btn'

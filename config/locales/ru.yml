@@ -1,0 +1,141 @@
+ru:
+  alerts:
+    access_denied: 'У вас недостаточно прав.' # Access denied
+  notices:
+    ticket_created: 'Билет создан.' # Ticket was successfully created.
+    ticket_updated: 'Билет изменен.' # Ticket was successfully updated.
+    ticket_destroyed: 'Билет удален.' # Ticket was successfully destroyed.
+    carriage_created: 'Вагон создан.' # Carriage was successfully created.
+    carriage_updated: 'Вагон изменен.' # Carriage was successfully updated.
+    carriage_destroyed: 'Вагон удален.' # Carriage was successfully destroyed.
+    railway_station_created: 'Станция создана.' # Railway station was successfully created.
+    railway_station_updated: 'Станция изменена.' # Railway station was successfully updated.
+    railway_station_destroyed: 'Станция удалена.' # Railway station was successfully destroyed.
+    route_created: 'Маршрут создан.' # Route was successfully created.
+    route_updated: 'Маршрут изменен.' # Route was successfully updated.
+    route_destroyed: 'Маршрут удален.' # Route was successfully destroyed.
+    train_created: 'Поезд создан.' # Train was successfully created.
+    train_updated: 'Поезд изменен.' # Train was successfully updated.
+    train_destroyed: 'Поезд удален.' # Train was successfully destroyed.
+    user_created: 'Пользователь создан.' # User was successfully created.
+    user_updated: 'Пользователь изменен.' # User was successfully updated.
+    user_destroyed: 'Пользователь удален.' # User was successfully destroyed.
+
+  common:
+    confirm: 'Вы уверены?' # Are you sure? 
+
+    show: 'Показать' # Show
+    create: 'Создать' # Create
+    edit: 'Изменить' # Edit
+    destroy: 'Удалить' # Destroy
+    back: 'Назад' # Back
+    update: 'Изменить' # Update
+
+    not_set: 'Не указано' # Not set
+
+  searches:
+    form:
+      start_station: 'Отправление со станции'
+      end_station: 'Прибытие на станцию'
+      submit: 'Найти поезд'
+      arrival_time: 'Время отправления'
+      departure_time: 'Время прибытия'
+      buy_ticket: 'Купить билет'
+    show:
+      title: 'Покупка билета'
+
+  tickets:
+    common:
+      confirm: 'Вы действительно хотите удалить билет?'
+    index:
+      title: 'Список билетов' # Listing tickets
+      new: 'Новый билет' # New ticket
+    form:
+      submit: '%{action} билет'
+    edit:
+      title: 'Изменить билет' # Editing ticket
+    new:
+      title: 'Новый билет'
+    show:
+      title: 'Билет'
+
+  admin:
+    tickets:
+      index:
+        title: 'Список билетов' # Listing tickets
+        new: 'Новый билет' # New ticket
+      form:
+        submit: '%{action} билет'
+      edit:
+        title: 'Изменить билет' # Editing ticket
+      new:
+        title: 'Новый билет'
+      show:
+        title: 'Билет'
+
+    railway_stations:
+      common:
+        confirm: 'Вы действительно хотите удалить станцию?'
+      index:
+        title: 'Список станций' # Listing railway station
+        new: 'Новая станция' # 'New railway station'
+      form:
+        submit: '%{action} станцию'
+      edit:
+        title: 'Изменить станцию' # Editing railway station
+      new:
+        title: 'Новая станция' # New railway station
+      show:
+        title: 'Станция' # Railway station
+
+    carriages:
+      common:
+        confirm: 'Вы действительно хотите удалить вагон?'
+      form:
+        submit: '%{action} вагон'
+      edit:
+        title: 'Изменить вагон' # Editing carriage
+      new:
+        title: 'Новый вагон' # New carriage
+      show:
+        title: 'Вагон' # Carriage station
+
+    routes:
+      common:
+        confirm: 'Вы действительно хотите удалить маршрут?'
+        change_order: 'Изменить порядок'
+      index:
+        title: 'Список маршрутов' # Listing routes
+        new: 'Новый маршрут' # 'New route'
+      form:
+        submit: '%{action} маршрут'
+      edit:
+        title: 'Изменить маршрут' # Editing route
+      new:
+        title: 'Новый маршрут' # New route
+      show:
+        title: 'Маршрут' # Route
+
+    trains:
+      common:
+        confirm: 'Вы действительно хотите удалить поезд?'
+      index:
+        title: 'Список поездов' # Listing trains
+        new: 'Новый поезд' # 'New train'
+      form:
+        submit: '%{action} поезд'
+      edit:
+        title: 'Изменить поезд' # Editing train
+      new:
+        title: 'Новый поезд' # New train
+      show:
+        title: 'Поезд' # Train
+      train:
+        total_carriages: 'Количество вагонов'
+        list_carriages: 'Список вагонов'
+        add_carriage: 'Добавить вагон'
+        coupe_carriages: 'Купе'
+        economy_carriages: 'Эконом'
+        sittings_carriages: 'Сидячий'
+        business_carriages: 'Бизнес'
+        tickets: 'Билеты'

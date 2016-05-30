@@ -1,9 +1,9 @@
-h3 Listing trains
+h3 = t('.title')
 
 table.striped
   thead
     tr
-      th Number
+      th = t('activerecord.attributes.train.number')
       th
       th
       th
@@ -11,4 +11,4 @@ table.striped
     / = render @trains
     = render partial: 'trains', collection: @trains, as: 'train'
 
-p = link_to 'New Train', new_admin_train_path, class: 'btn'
+p = link_to t('.new'), new_admin_train_path, class: 'btn'

@@ -20,7 +20,7 @@ class TicketsController < ApplicationController
   def create
     @ticket = current_user.tickets.new(ticket_params.merge(add_ticket_params))
     if @ticket.save 
-      redirect_to @ticket, notice: 'Ticket was successfully created.' 
+      redirect_to @ticket, notice: I18n.t('notices.ticket_created')
     else
       render :new
     end
@@ -28,7 +28,7 @@ class TicketsController < ApplicationController
 
   def update
     if @ticket.update(ticket_params)
-      redirect_to @ticket, notice: 'Ticket was successfully updated.'
+      redirect_to @ticket, notice: I18n.t('notices.ticket_updated')
     else
       render :edit
     end
@@ -36,7 +36,7 @@ class TicketsController < ApplicationController
 
   def destroy
     @ticket.destroy
-    redirect_to tickets_path, notice: 'Ticket was successfully destroyed.' 
+    redirect_to tickets_path, notice: I18n.t('notices.ticket_destroyed') 
   end
 
   private

@@ -1,5 +1,5 @@
 h2
-  | Resend unlock instructions
+  = t('devise.common.did_not_receive_unlock_instructions')
 = form_for(resource, as: resource_name, url: unlock_path(resource_name), 
     html: { method: :post }) do |f|
   = devise_error_messages!
@@ -8,6 +8,6 @@ h2
       = f.label :email
       = f.email_field :email, autofocus: true
   .actions
-    = f.submit "Resend unlock instructions", class: "btn"
+    = f.submit t('.resend_unlock_instructions'), class: "btn"
 br    
 = render "devise/shared/links"

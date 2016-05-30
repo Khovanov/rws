@@ -1,14 +1,16 @@
 h4 = ticket.id
 
 p 
-  'User:
+  = t('activerecord.models.user')
+  ':
   = ticket.user.try(:name)
 p 
-  'Train:
+  = t('activerecord.models.train')
+  ':
   = ticket.train.try(:number)
 
 p 
-  =< link_to 'Edit', edit_admin_ticket_path(ticket)
-  =< link_to 'Destroy', admin_ticket_path(ticket), 
-        data: {confirm: 'Are you sure?'}, 
+  =< link_to t('common.edit'), edit_admin_ticket_path(ticket)
+  =< link_to t('common.destroy'), admin_ticket_path(ticket), 
+        data: {confirm: t('tickets.common.confirm')}, 
         method: :delete

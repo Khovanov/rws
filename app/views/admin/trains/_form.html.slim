@@ -21,5 +21,5 @@
 
   .row  
     .col
-      = link_to 'Back', admin_trains_path, class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), admin_trains_path, class: 'btn' 
+      =< f.submit t('.submit', action: @train.new_record? ? t('common.create') : t('common.update')), class: 'btn'

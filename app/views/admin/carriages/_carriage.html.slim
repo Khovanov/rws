@@ -1,25 +1,30 @@
 h4 = carriage.number
 
 p 
-  'Train:
+  = t('activerecord.models.train')
+  ':
   = carriage.train.number
 
 - if carriage.top_seats
   p 
-    'Top seats:
+    = t('activerecord.attributes.carriage.top_seats')
+    ':
     = carriage.top_seats
 
 - if carriage.bottom_seats
   p 
-    'Bottom seats:
+    = t('activerecord.attributes.carriage.bottom_seats')
+    ':
     = carriage.bottom_seats
 
 - if carriage.side_top_seats
   p 
-    'Side top seats:
+    = t('activerecord.attributes.carriage.side_top_seats')
+    ':
     = carriage.side_top_seats
 
 - if carriage.side_bottom_seats
   p 
-    'Side bottom seats:
+    = t('activerecord.attributes.carriage.side_bottom_seats')
+    ':
     = carriage.side_bottom_seats

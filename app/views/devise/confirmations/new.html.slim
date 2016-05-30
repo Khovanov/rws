@@ -1,5 +1,5 @@
 h2
-  | Resend confirmation instructions
+  = t('devise.common.did_not_receive_confirmation_instructions')
 = form_for(resource, as: resource_name, url: confirmation_path(resource_name), 
     html: { method: :post }) do |f|
   = devise_error_messages!
@@ -10,6 +10,6 @@ h2
         autofocus: true, 
         value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
   .actions
-    = f.submit "Resend confirmation instructions", class: "btn"
+    = f.submit t('.resend_confirmation_instructions'), class: "btn"
 br
 = render "devise/shared/links"

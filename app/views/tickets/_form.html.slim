@@ -1,11 +1,14 @@
 h4 
-  'Train:
+  = t('activerecord.models.train')
+  |:
   = @ticket.train.number
 p 
-  'Start station:
+  = t('activerecord.attributes.ticket.start_station')
+  |:
   = @ticket.start_station.title
 p 
-  'End station:
+  = t('activerecord.attributes.ticket.end_station')
+  |:
   = @ticket.end_station.title
 
 = form_for [@train, @ticket] do |f|
@@ -13,13 +16,13 @@ p
 
   .row
     .col.field.input-field
-      = f.label :full_name , class: 'active'
+      = f.label :full_name, class: 'active'
       = f.text_field :full_name
   .row
     .col.field.input-field
-      = f.label :passport , class: 'active'
+      = f.label :passport, class: 'active'
       = f.text_field :passport
   .row  
     .col
-      = link_to 'Back', tickets_path, class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), tickets_path, class: 'btn' 
+      =< f.submit t('.submit', action: @ticket.new_record? ? t('common.create') : t('common.update')), class: 'btn'

@@ -1,9 +1,9 @@
-h3 Listing routes
+h3 = t('.title')
 
 table.striped
   thead
     tr
-      th Name
+      th = t('activerecord.attributes.route.name')
       th
       th
       th
@@ -11,4 +11,4 @@ table.striped
   tbody
     = render partial: 'routes', collection: @routes, as: 'route'
 
-p = link_to 'New Route', new_admin_route_path, class: 'btn'
+p = link_to t('.new'), new_admin_route_path, class: 'btn'

@@ -1,11 +1,13 @@
 h4 
   = "#{ticket.full_name}, #{ticket.passport}"
 p 
-  'User:
+  = t('activerecord.models.user')
+  ':
   = ticket.user.try(:name)
 p 
-  'Train:
+  = t('activerecord.models.train')
+  ':
   = ticket.train.try(:number)
 p 
-  =< link_to 'Edit', edit_ticket_path(ticket)
-  =< link_to 'Destroy', ticket, data: {confirm: 'Are you sure?'}, method: :delete
+  =< link_to t('common.edit'), edit_ticket_path(ticket)
+  =< link_to t('common.destroy'), ticket, data: {confirm: t('tickets.common.confirm')}, method: :delete

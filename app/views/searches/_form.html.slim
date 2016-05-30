@@ -1,21 +1,21 @@
 = form_tag search_path, method: :get, enforce_utf8: false do ||
   .row
     .col.field.input-field
-      = label_tag :start_station, 'Start station', class: 'active'
+      = label_tag :start_station, t('.start_station'), class: 'active'
       = select_tag :start_station, 
                    options_from_collection_for_select(@railway_stations,:id, :title,
                      params[:start_station]),
                    include_blank: true
   .row
     .col.field.input-field
-      = label_tag :end_station, 'End station', class: 'active'
+      = label_tag :end_station, t('.end_station'), class: 'active'
       = select_tag :end_station, 
                    options_from_collection_for_select(@railway_stations, :id, :title,
                      params[:end_station]),
                    include_blank: true 
   .row  
     .col
-      = submit_tag 'Find', name: nil, class: 'btn' 
+      = submit_tag t('.submit'), name: nil, class: 'btn' 
 
 
 - if @routes.present?
@@ -26,11 +26,12 @@
         - route.trains.each do |train|
           h4 = train.number
           p 
-            'arrival_time:
+            = t('.arrival_time')
+            ':
             = route.end_station.arrival_time(route)
           p 
-            'departure_time:
+            = t('.departure_time')
+            ':
             = route.start_station.departure_time(route)
           p
-            / # = link_to 'Buy ticket', new_train_ticket_path(train), class: 'btn'
-            = link_to 'Buy ticket', new_train_ticket_path(train), class: 'btn'
+            = link_to t('.buy_ticket'), new_train_ticket_path(train), class: 'btn'

@@ -1,88 +1,105 @@
 h4 = train.number
 p 
-  'Current station:
+  = t('activerecord.attributes.train.current_station')
+  ':
   - if train.current_station.present?
       = train.current_station.title 
   - else
-      'none
+      = t('common.not_set')
 
 p 
-  'Route:
+  = t('activerecord.attributes.train.route')
+  ':
   - if train.route.present?
       = train.route.name 
   - else
-      'none
+      = t('common.not_set')
 
 p 
-  'Total carriages:
+  = t('.total_carriages')
+  ':
   - if train.carriages.present?
       = train.carriages.size 
   - else
-      'none
+      = t('common.not_set')
 
 - if train.carriages.present?
   p 
-    'List carriages:
+    = t('.list_carriages')
+    ':
   ul
     - train.carriages_order.each do |carriage|
       li 
         =< link_to "№ #{carriage.number}", admin_carriage_path(carriage)
-        =< link_to 'Edit', edit_admin_carriage_path(carriage)
-        =< link_to 'Delete',
+        =< link_to t('common.edit'), edit_admin_carriage_path(carriage)
+        =< link_to t('common.destroy'),
                           admin_carriage_path(carriage),
                           method: :delete,
-                          data: {confirm: 'Are you sure?'} 
+                          data: {confirm: t('admin.carriages.common.confirm')} 
 
-p =< link_to 'Add carriage', new_admin_train_carriage_path(train) 
+p =< link_to t('.add_carriage'), new_admin_train_carriage_path(train) 
 
 - if train.try(:coupes).present?
   p 
-    'Coupe carriages:
+    = t('.coupe_carriages')
+    ':
     = train.coupes.size 
     br
-    'Top seats:
+    = t('activerecord.attributes.carriage.top_seats')
+    ':
     = train.seats('CoupeCarriage','top_seats') 
     br
-    'Bottom seats:
+    = t('activerecord.attributes.carriage.bottom_seats') 
+    ':
     = train.seats('CoupeCarriage','bottom_seats')
 
 - if train.try(:economies).present?
   p 
-    'Economy carriages:
+    = t('.economy_carriages')
+    ':
     = train.economies.size 
     br
-    'Top seats:
+    = t('activerecord.attributes.carriage.top_seats')
+    ':
     = train.seats('EconomyCarriage','top_seats') 
     br
-    'Bottom seats:
+    = t('activerecord.attributes.carriage.bottom_seats') 
+    ':
     = train.seats('EconomyCarriage','bottom_seats')
     br
-    'Side top seats:
+    = t('activerecord.attributes.carriage.side_top_seats')
+    ':
     = train.seats('EconomyCarriage','side_top_seats')
     br
-    'Side bottom seats:
+    = t('activerecord.attributes.carriage.side_bottom_seats')
+    ':
     = train.seats('EconomyCarriage','side_bottom_seats')
 
 - if train.try(:businesses).present?
   p 
-    'Business carriages:
+    = t('.business_carriages')
+    ':
     = train.businesses.size 
     br
-    'Bottom seats:
+    = t('activerecord.attributes.carriage.bottom_seats') 
+    ':
     = train.seats('BusinessCarriage','bottom_seats')
 
 - if train.try(:sittings).present?
   p 
-    'Sittings carriages:
+    = t('.sittings_carriages')
+    ':
     = train.sittings.size 
     br
-    'Bottom seats:
+    = t('activerecord.attributes.carriage.bottom_seats') 
+    ':
     = train.seats('SittingCarriage','bottom_seats')
 
 p 
-  'Tickets:
+  = t('.tickets')
+  ':
   - if train.tickets.empty?
-      'none
+    = t('common.not_set')
   - else
       ul
         - train.tickets.each do |ticket|
@@ -90,5 +107,5 @@ p
               =< link_to "№ #{ticket.id}", ticket_path(ticket)
 
 p 
-  =< link_to 'Edit', edit_admin_train_path(train)
-  =< link_to 'Destroy', admin_train_path(train), data: {confirm: 'Are you sure?'}, method: :delete
+  =< link_to t('common.edit'), edit_admin_train_path(train)
+  =< link_to t('common.destroy'), admin_train_path(train), data: {confirm: t('admin.trains.common.confirm')}, method: :delete

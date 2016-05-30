@@ -1,5 +1,5 @@
 tr
   td = "(#{ticket.id}) #{ticket.start_station.title} #{ticket.end_station.title}"
-  td = link_to 'Show', ticket
-  td = link_to 'Edit', edit_ticket_path(ticket)
-  td = link_to 'Destroy', ticket, data: {confirm: 'Are you sure?'}, method: :delete
+  td = link_to t('common.show'), ticket
+  td = link_to t('common.edit'), edit_ticket_path(ticket)
+  td = link_to t('common.destroy'), ticket, data: {confirm: t('tickets.common.confirm')}, method: :delete
