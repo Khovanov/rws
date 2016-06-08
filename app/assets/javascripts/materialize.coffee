@@ -3,6 +3,7 @@ ready = ->
   $('.parallax').parallax()
   $('.modal-trigger').leanModal()
   $('select').material_select()
+  $('.dropdown-button').dropdown()
 
   $notice = $('.notice')
   if ($notice.text() != '')

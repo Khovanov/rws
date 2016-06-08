@@ -1,13 +1,13 @@
-h3 Listing users
+h3 = t('.title')
 
 table.striped
   thead
     tr
-      th Name
+      th = t('activerecord.attributes.user.name')
       th
       th
       th
   tbody
     = render partial: 'users', collection: @users, as: 'user'
 
-p = link_to 'New User', new_admin_user_path, class: 'btn'
+p = link_to t('.new'), new_admin_user_path, class: 'btn'

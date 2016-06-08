@@ -9,7 +9,8 @@
     .col.field.input-field
       = f.label :type, class: 'active'
       / # = f.select :type, Carriage.types.map {|r| [r.humanize, r.camelcase]}, {}, disabled: @type!= "Carriage"
-      = f.select :type, Carriage.types
+      / # = f.select :type, Carriage.types
+      = f.select :type, i18n_select_types
 
   .row
     .col.field.input-field

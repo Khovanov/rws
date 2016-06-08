@@ -18,7 +18,7 @@ class Sti::CarriagesController < Admin::BaseController
   def create
     @carriage = Carriage.new(carriage_params)
     if @carriage.save 
-      redirect_to [:sti, @carriage], notice: "#{type_params} was successfully created." 
+      redirect_to [:sti, @carriage], notice: I18n.t('notices.carriage_created') 
     else
       render :new
     end
@@ -29,7 +29,7 @@ class Sti::CarriagesController < Admin::BaseController
 
   def update
     if @carriage.update(carriage_params)
-      redirect_to [:sti, @carriage], notice: "#{type_params} was successfully updated."
+      redirect_to [:sti, @carriage], notice: I18n.t('notices.carriage_updated')
     else
       render :edit
     end
@@ -37,7 +37,7 @@ class Sti::CarriagesController < Admin::BaseController
 
   def destroy
     @carriage.destroy
-    redirect_to sti_carriages_path, notice: "#{type_params} was successfully destroyed."
+    redirect_to sti_carriages_path, notice: I18n.t('notices.carriage_destroyed')
   end 
 
   private

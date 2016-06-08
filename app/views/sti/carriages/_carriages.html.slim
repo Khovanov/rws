@@ -1,6 +1,9 @@
 tr
   td = "#{carriage.number} - #{carriage.type} - #{carriage.train.number}(#{carriage.train.id})"
-  td = link_to 'Show', sti_carriage_helper_path(carriage.type, carriage)
-  td = link_to 'Edit', sti_carriage_helper_path(carriage.type, carriage, :edit)
-  td = link_to 'Destroy', sti_carriage_helper_path(carriage.type, carriage), data: {confirm: 'Are you sure?'}, method: :delete
-  td = link_to "See all #{carriage.type.pluralize}", sti_carriage_helper_path(carriage.type)
+  td = link_to t('common.show'), sti_carriage_helper_path(carriage.type, carriage)
+  td = link_to t('common.edit'), sti_carriage_helper_path(carriage.type, carriage, :edit)
+  td = link_to t('common.destroy'), sti_carriage_helper_path(carriage.type, carriage), data: {confirm: t('sti.carriages.common.confirm')}, method: :delete
+
+  
+  td = link_to t('.see_all_type', type: i18n_type(carriage.type)), sti_carriage_helper_path(carriage.type)
+    / # td = link_to "See all #{carriage.type.pluralize}", sti_carriage_helper_path(carriage.type)

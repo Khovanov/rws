@@ -1,0 +1,56 @@
+en:
+  activerecord:
+    models:
+      carriage: "Carriage"
+      railway_station: "Railway station"
+      route: "Route"
+      ticket: "Ticket"
+      train: "Train"
+      user: "User"
+    attributes:
+      carriage:
+        number: "Number"
+        type: "Type"
+        bottom_seats: "Bottom seats"
+        top_seats: "Top seats"
+        side_bottom_seats: "Side bottom seats"
+        side_top_seats: "Side top seats"
+        train: "Train"
+      railway_station:
+        title: "Title"
+      route:
+        name: "Name"
+      ticket:
+        full_name: "Full name"
+        passport: "Passport data"
+        start_station: "Departure station"
+        end_station: "Arrival station"
+        train: "Train"
+        user: "User"
+      train:
+        number: "Number"
+        current_station: "Current station"
+        route: "Route"
+        ascending_carriages_order: "Ascending carriages order"
+      user:
+        email: "Email"
+        password: "Password"
+        name: "Name"
+        password_confirmation: "Password confirmation"
+        remember_me: "Remember me" 
+        current_password: "Current password"      
+    errors:
+      messages:
+        blank: "- field must not be empty"
+        not_a_number: "- field must contain the number"
+        taken: "- a field value already exists"
+        invalid: "- field contains invalid data"
+        confirmation: "- field does not match"
+        too_short: "- field value is too short"
+      models:
+        user:
+          attributes:
+            email:
+              taken: "- user with the same email is already registered"
+            name:
+              blank: "- name not be empty"        

@@ -20,4 +20,227 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  alerts:
+    access_denied: "Access denied"
+  notices:
+    ticket_created: "Ticket was successfully created."
+    ticket_updated: "Ticket was successfully updated."
+    ticket_destroyed: "Ticket was successfully destroyed."
+    carriage_created: "Carriage was successfully created."
+    carriage_updated: "Carriage was successfully updated."
+    carriage_destroyed: "Carriage was successfully destroyed."
+    railway_station_created: "Railway station was successfully created."
+    railway_station_updated: "Railway station was successfully updated."
+    railway_station_destroyed: "Railway station was successfully destroyed."
+    route_created: "Route was successfully created."
+    route_updated: "Route was successfully updated."
+    route_destroyed: "Route was successfully destroyed."
+    train_created: "Train was successfully created."
+    train_updated: "Train was successfully updated."
+    train_destroyed: "Train was successfully destroyed."
+    user_created: "User was successfully created."
+    user_updated: "User was successfully updated."
+    user_destroyed: "User was successfully destroyed."
+
+  common:
+    confirm: "Are you sure?"
+    show: "Show"
+    create: "Create"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+    update: "Update"
+    not_set: "Not set"
+
+  searches:
+    form:
+      start_station: "Departure station" 
+      end_station: "Arrival station" 
+      submit: "Find train"
+      arrival_time: "Arrival time"
+      departure_time: "Departure time"
+      buy_ticket: "Buy ticket"
+    show:
+      title: "Search train"
+
+  tickets:
+    common:
+      confirm: "You really want delete ticket?"
+    index:
+      title: "Listing tickets"
+      new: "New ticket"
+    form:
+      submit: "%{action} ticket"
+    edit:
+      title: "Editing ticket"
+    new:
+      title: "New ticket"
+    show:
+      title: "Ticket"
+
+  admin:
+    tickets:
+      index:
+        title: "Listing tickets"
+        new: "New ticket"
+      form:
+        submit: "%{action} ticket"
+      edit:
+        title: "Editing ticket"
+      new:
+        title: "New ticket"
+      show:
+        title: "Ticket"
+
+    railway_stations:
+      common:
+        confirm: "You really want delete station?"
+      index:
+        title: "Listing railway station"
+        new: "New railway station"
+      form:
+        submit: "%{action} station"
+      edit:
+        title: "Editing railway station"
+      new:
+        title: "New railway station"
+      show:
+        title: "Railway station"
+
+    carriages:
+      common:
+        confirm: "You really want delete carriage?"
+      form:
+        submit: "%{action} carriage"
+      edit:
+        title: "Editing carriage"
+      new:
+        title: "New carriage"
+      show:
+        title: "Carriage station"
+
+    routes:
+      common:
+        confirm: "You really want delete route?"
+        change_order: "Change order"
+      index:
+        title: "Listing routes"
+        new: "New route"
+      form:
+        submit: "%{action} route"
+      edit:
+        title: "Editing route"
+      new:
+        title: "New route"
+      show:
+        title: "Route"
+
+    trains:
+      common:
+        confirm: "You really want delete train?"
+      index:
+        title: "Listing trains"
+        new: "New train"
+      form:
+        submit: "%{action} train"
+      edit:
+        title: "Editing train"
+      new:
+        title: "New train"
+      show:
+        title: "Train"
+      train:
+        total_carriages: "Total carriages"
+        list_carriages: "List carriages"
+        add_carriage: "New carriage"
+        coupe_carriages: "Coupe carriages"
+        economy_carriages: "Economy carriages"
+        sittings_carriages: "Sittings carriages"
+        business_carriages: "Business carriages"
+        tickets: "Tickets"
+
+    users:
+      common:
+        confirm: "You really want delete user?"
+      index:
+        title: "Listing users"
+        new: "New user"
+      form:
+        submit: "%{action} user"
+      edit:
+        title: "Editing user"
+      new:
+        title: "New user"
+      show:
+        title: "User"
+      user:
+        tickets: "Tickets"
+        
+  sti:
+    carriages:
+      common:
+        confirm: "You really want delete carriage?"
+      index:
+        title: "Listing %{type} carriages"
+        see_all_carriages: "See all carriages"
+        new: "New %{type} carriage"
+      form:
+        submit: "%{action} carriage"
+      edit:
+        title: "Editing %{type} carriage" 
+      new:
+        title: "New %{type} carriage" 
+      show:
+        title: "Carriage" 
+      carriages:
+        see_all_type: "See all  %{type}" 
+
+  carriages:
+    types:
+      coupe_carriage: "Coupe"
+      economy_carriage: "Economy"
+      business_carriage: "Sittings"
+      sitting_carriage: "Business"
+
+  welcome: 
+    banner:
+      service_short_explain: 
+        "Service quick search and buying trains tickets"
+      search: "Search"
+    future:
+      fast_search_header: "Fast search"
+      fast_search: 
+        "To find train is enough to specify the starting 
+        and ending points of the route. 
+        If you have found a suitable train,
+        then you buy a ticket (you must sign up)."
+      responsive_interface_header: "Responsive interface"
+      responsive_interface: 
+        "Our interface is simple and is made using elements and principles 
+        of Material Design. It allows you to buy tickets using the 
+        tablet device or mobile phone"
+      easy_to_use_header: "Easy to use"
+      easy_to_use: 
+        "After buying all your tickets are stored
+        in your account and are available at any time (you must sign up)."
+
+  layouts: 
+    footer:
+      about_header: "About" 
+      about: 
+        "This training project demonstrates the development 
+        of the Ruby language and Rails framework."
+      use_materialize: "The application use"
+      source: "Source"
+      contacts: "Contacts"
+    navbar:
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+    navlink:
+      search: "Search"
+      tickets: "Tickets"
+      stations: "Stations"
+      trains: "Trains"
+      routes: "Routes"
+      carriages: "Carriages"
+      users: "Users"

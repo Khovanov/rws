@@ -1,20 +1,32 @@
 header.navbar-fixed role="banner"
+  /! Dropdown Structure 
+  ul.dropdown-content#lang
+    li
+      a.blue-text href="/?locale=en" En 
+    li.divider
+    li
+      a.blue-text href="/?locale=ru" Ru
+
   nav.light-blue.lighten-1 role="navigation"
     .nav-wrapper.container
-      a.brand-logo href="/" id="logo-container" RwS
+      a.brand-logo#logo-container href="/" RwS
       ul.right
-          - if user_signed_in?
+        - if user_signed_in?
             li
-              = link_to "Exit | #{current_user.name}", 
+              = link_to "#{t('.sign_out')} (#{current_user.name})", 
                   destroy_user_session_path, method: :delete
-          - else
+        - else
             li
-              = link_to 'Sign in', new_user_session_path
+              = link_to t('.sign_in'), new_user_session_path
+        /! Dropdown Trigger
+        li.blue
+          a.dropdown-button href="#!" data-activates="lang" 
+            = I18n.locale.capitalize
+            i.material-icons.right arrow_drop_down
 
       ul.right.hide-on-med-and-down
         = render "layouts/navlink"
 
-        
       ul.side-nav id="nav-mobile"
         = render "layouts/navlink"
 

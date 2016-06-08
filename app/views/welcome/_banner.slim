@@ -1,11 +1,13 @@
 .parallax-container id="index-banner"
   .section.no-pad-bot 
-    .container
+    .container.glass
       h1.header.center.orange-text Railway Stations
       .row.center
-        h5.header.col.s12.light A modern responsive front-end framework based on Material Design
+        h5.header.col.s12.light 
+          = t('.service_short_explain')
       .row.center
-        a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange" Get Started
+        a href="/search" class="btn-large waves-effect waves-light orange" 
+          = t('.search')
 
   .parallax 
     img src="/assets/rails.jpg" alt="Unsplashed background img 1"

@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   # Devise
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :set_locale
 
   def after_sign_in_path_for(resource)
     # Base behavior
@@ -20,5 +21,11 @@ class ApplicationController < ActionController::Base
   # Devise 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+  end
+
+  def set_locale
+    session[:locale] = params[:locale] if I18n.available_locales
+      .map(&:to_s).include?(params[:locale])
+    I18n.locale = session[:locale] || I18n.default_locale
   end
 end

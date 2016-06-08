@@ -1,0 +1,47 @@
+en:
+  devise:
+    common:
+      back: "Back"
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      edit_account: "Edit account"
+      cancel_account: "Cancel account"
+      forgot_password: "Forgot your password?"
+      change_password: "Change your password"
+      characters_minimum: "characters minimum"
+      did_not_receive_confirmation_instructions: 
+        "Didn't receive confirmation instructions?"
+      did_not_receive_unlock_instructions: 
+        "Didn't receive unlock instructions?" 
+
+    sessions:
+      new:
+        sign_in: "Sign in" 
+    registrations:
+      new:
+        sign_up: "Sign up"
+      edit:
+        waiting_confirmation_for: 
+          "Currently waiting confirmation for:"
+        leave_blank: "leave blank if you don't want to change it" 
+        need_current_password: "we need your current password to confirm your changes" 
+        update: "Update"
+        unhappy: "No longer need our services?"
+        cancel_account: "Cancel my account"
+        confirm: "Do you want to delete your account?"
+    passwords:
+      new:
+        send_reset_password_instructions: 
+          "Send me reset password instructions" 
+      edit:
+        change_password: "Change your password" 
+        new_password: "New password"
+        confirm_new_password: "Confirm new password"
+    confirmations:
+      new:
+        resend_confirmation_instructions: 
+          "Resend confirmation instructions"
+    unlocks:
+      new:
+        resend_unlock_instructions: 
+          "Resend unlock instructions"

@@ -14,7 +14,8 @@
     .col.field.input-field
       = f.label :type, class: 'active'
       / # = f.select :type, Carriage.types.map {|r| [r.humanize, r.camelcase]}, {}, disabled: @type!= "Carriage"
-      = f.select :type, Carriage.types
+      / # = f.select :type, Carriage.types
+      = f.select :type, i18n_select_types
 
   .row
     .col.field.input-field
@@ -40,5 +41,5 @@
   .row  
     .col
       / # = link_to 'Back', carriages_path, class: 'btn' 
-      = link_to 'Back', sti_carriage_helper_path(@type), class: 'btn' 
-      =< f.submit class: 'btn'
+      = link_to t('common.back'), sti_carriage_helper_path(@type), class: 'btn' 
+      =< f.submit t('.submit', action: @carriage.new_record? ? t('common.create') : t('common.update')), class: 'btn'

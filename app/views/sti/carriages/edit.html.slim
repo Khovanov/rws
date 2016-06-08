@@ -1,5 +1,4 @@
 h3 
-  'Editing 
-  = "#{@type.capitalize}"
+  = t('.title', type: i18n_type(@type))
 
 == render 'form'

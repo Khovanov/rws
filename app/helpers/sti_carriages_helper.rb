@@ -13,4 +13,12 @@ module StiCarriagesHelper
     action ? "#{action}_" : ""
   end
 
+  def i18n_type(type)
+    type == 'Carriage' ? '': t("carriages.types.#{type.underscore}")
+  end
+
+  def i18n_select_types
+    # Hash[Carriage.types.map{|type| [t("carriages.types.#{type.underscore}"), type]}]
+    Carriage.types.map{|type| [t("carriages.types.#{type.underscore}"), type]}
+  end  
 end

@@ -1,141 +1,225 @@
 ru:
   alerts:
-    access_denied: 'У вас недостаточно прав.' # Access denied
+    access_denied: "У вас недостаточно прав."
   notices:
-    ticket_created: 'Билет создан.' # Ticket was successfully created.
-    ticket_updated: 'Билет изменен.' # Ticket was successfully updated.
-    ticket_destroyed: 'Билет удален.' # Ticket was successfully destroyed.
-    carriage_created: 'Вагон создан.' # Carriage was successfully created.
-    carriage_updated: 'Вагон изменен.' # Carriage was successfully updated.
-    carriage_destroyed: 'Вагон удален.' # Carriage was successfully destroyed.
-    railway_station_created: 'Станция создана.' # Railway station was successfully created.
-    railway_station_updated: 'Станция изменена.' # Railway station was successfully updated.
-    railway_station_destroyed: 'Станция удалена.' # Railway station was successfully destroyed.
-    route_created: 'Маршрут создан.' # Route was successfully created.
-    route_updated: 'Маршрут изменен.' # Route was successfully updated.
-    route_destroyed: 'Маршрут удален.' # Route was successfully destroyed.
-    train_created: 'Поезд создан.' # Train was successfully created.
-    train_updated: 'Поезд изменен.' # Train was successfully updated.
-    train_destroyed: 'Поезд удален.' # Train was successfully destroyed.
-    user_created: 'Пользователь создан.' # User was successfully created.
-    user_updated: 'Пользователь изменен.' # User was successfully updated.
-    user_destroyed: 'Пользователь удален.' # User was successfully destroyed.
+    ticket_created: "Билет создан."
+    ticket_updated: "Билет изменен." 
+    ticket_destroyed: "Билет удален." 
+    carriage_created: "Вагон создан."
+    carriage_updated: "Вагон изменен."
+    carriage_destroyed: "Вагон удален."
+    railway_station_created: "Станция создана."
+    railway_station_updated: "Станция изменена."
+    railway_station_destroyed: "Станция удалена."
+    route_created: "Маршрут создан."
+    route_updated: "Маршрут изменен."
+    route_destroyed: "Маршрут удален."
+    train_created: "Поезд создан."
+    train_updated: "Поезд изменен."
+    train_destroyed: "Поезд удален."
+    user_created: "Пользователь создан."
+    user_updated: "Пользователь изменен."
+    user_destroyed: "Пользователь удален."
 
   common:
-    confirm: 'Вы уверены?' # Are you sure? 
-
-    show: 'Показать' # Show
-    create: 'Создать' # Create
-    edit: 'Изменить' # Edit
-    destroy: 'Удалить' # Destroy
-    back: 'Назад' # Back
-    update: 'Изменить' # Update
-
-    not_set: 'Не указано' # Not set
+    confirm: "Вы уверены?" 
+    show: "Показать"
+    create: "Создать"
+    edit: "Изменить"
+    destroy: "Удалить"
+    back: "Назад"
+    update: "Изменить"
+    not_set: "Не указано"
 
   searches:
     form:
-      start_station: 'Отправление со станции'
-      end_station: 'Прибытие на станцию'
-      submit: 'Найти поезд'
-      arrival_time: 'Время отправления'
-      departure_time: 'Время прибытия'
-      buy_ticket: 'Купить билет'
+      start_station: "Станция отправления"
+      end_station: "Станция прибытия"
+      submit: "Найти поезд"
+      arrival_time: "Время отправления"
+      departure_time: "Время прибытия"
+      buy_ticket: "Купить билет"
     show:
-      title: 'Покупка билета'
+      title: "Поиск поезда"
 
   tickets:
     common:
-      confirm: 'Вы действительно хотите удалить билет?'
+      confirm: "Вы действительно хотите удалить билет?"
     index:
-      title: 'Список билетов' # Listing tickets
-      new: 'Новый билет' # New ticket
+      title: "Список билетов"
+      new: "Новый билет"
     form:
-      submit: '%{action} билет'
+      submit: "%{action} билет"
     edit:
-      title: 'Изменить билет' # Editing ticket
+      title: "Изменить билет"
     new:
-      title: 'Новый билет'
+      title: "Новый билет"
     show:
-      title: 'Билет'
+      title: "Билет"
 
   admin:
     tickets:
       index:
-        title: 'Список билетов' # Listing tickets
-        new: 'Новый билет' # New ticket
+        title: "Список билетов"
+        new: "Новый билет"
       form:
-        submit: '%{action} билет'
+        submit: "%{action} билет"
       edit:
-        title: 'Изменить билет' # Editing ticket
+        title: "Изменить билет"
       new:
-        title: 'Новый билет'
+        title: "Новый билет"
       show:
-        title: 'Билет'
+        title: "Билет"
 
     railway_stations:
       common:
-        confirm: 'Вы действительно хотите удалить станцию?'
+        confirm: "Вы действительно хотите удалить станцию?"
       index:
-        title: 'Список станций' # Listing railway station
-        new: 'Новая станция' # 'New railway station'
+        title: "Список станций"
+        new: "Новая станция"
       form:
-        submit: '%{action} станцию'
+        submit: "%{action} станцию"
       edit:
-        title: 'Изменить станцию' # Editing railway station
+        title: "Изменить станцию"
       new:
-        title: 'Новая станция' # New railway station
+        title: "Новая станция"
       show:
-        title: 'Станция' # Railway station
+        title: "Станция"
 
     carriages:
       common:
-        confirm: 'Вы действительно хотите удалить вагон?'
+        confirm: "Вы действительно хотите удалить вагон?"
       form:
-        submit: '%{action} вагон'
+        submit: "%{action} вагон"
       edit:
-        title: 'Изменить вагон' # Editing carriage
+        title: "Изменить вагон"
       new:
-        title: 'Новый вагон' # New carriage
+        title: "Новый вагон"
       show:
-        title: 'Вагон' # Carriage station
+        title: "Вагон"
 
     routes:
       common:
-        confirm: 'Вы действительно хотите удалить маршрут?'
-        change_order: 'Изменить порядок'
+        confirm: "Вы действительно хотите удалить маршрут?"
+        change_order: "Изменить порядок"
       index:
-        title: 'Список маршрутов' # Listing routes
-        new: 'Новый маршрут' # 'New route'
+        title: "Список маршрутов"
+        new: "Новый маршрут"
       form:
-        submit: '%{action} маршрут'
+        submit: "%{action} маршрут"
       edit:
-        title: 'Изменить маршрут' # Editing route
+        title: "Изменить маршрут"
       new:
-        title: 'Новый маршрут' # New route
+        title: "Новый маршрут"
       show:
-        title: 'Маршрут' # Route
+        title: "Маршрут"
 
     trains:
       common:
-        confirm: 'Вы действительно хотите удалить поезд?'
+        confirm: "Вы действительно хотите удалить поезд?"
       index:
-        title: 'Список поездов' # Listing trains
-        new: 'Новый поезд' # 'New train'
+        title: "Список поездов"
+        new: "Новый поезд"
       form:
-        submit: '%{action} поезд'
+        submit: "%{action} поезд"
       edit:
-        title: 'Изменить поезд' # Editing train
+        title: "Изменить поезд"
       new:
-        title: 'Новый поезд' # New train
+        title: "Новый поезд"
       show:
-        title: 'Поезд' # Train
+        title: "Поезд"
       train:
-        total_carriages: 'Количество вагонов'
-        list_carriages: 'Список вагонов'
-        add_carriage: 'Добавить вагон'
-        coupe_carriages: 'Купе'
-        economy_carriages: 'Эконом'
-        sittings_carriages: 'Сидячий'
-        business_carriages: 'Бизнес'
-        tickets: 'Билеты'
+        total_carriages: "Количество вагонов"
+        list_carriages: "Список вагонов"
+        add_carriage: "Добавить вагон"
+        coupe_carriages: "Купе"
+        economy_carriages: "Эконом"
+        sittings_carriages: "Сидячий"
+        business_carriages: "Бизнес"
+        tickets: "Билеты"
+
+    users:
+      common:
+        confirm: "Вы действительно хотите удалить пользователя?"
+      index:
+        title: "Список пользователей"
+        new: "Новый пользователь"
+      form:
+        submit: "%{action} пользователя"
+      edit:
+        title: "Изменить пользователя"
+      new:
+        title: "Новый пользователь"
+      show:
+        title: "Пользователь"
+      user:
+        tickets: "Билеты"
+        
+  sti:
+    carriages:
+      common:
+        confirm: "Вы действительно хотите удалить вагон?"
+      index:
+        title: "Список вагонов %{type}"
+        see_all_carriages: "Список вагонов всех типов"
+        new: "Новый %{type} вагон"
+      form:
+        submit: "%{action} вагон"
+      edit:
+        title: "Изменить %{type} вагон"
+      new:
+        title: "Новый %{type} вагон"
+      show:
+        title: "Вагон"
+      carriages:
+        see_all_type: "Показать все вагоны %{type}"
+  
+  carriages:
+    types:
+      coupe_carriage: "Купе"
+      economy_carriage: "Эконом"
+      business_carriage: "Бизнес"
+      sitting_carriage: "Сидячий"
+
+  welcome: 
+    banner:
+      service_short_explain: 
+        "Сервис быстрого поиска и покупки билетов на поезд"
+      search: "Поиск"
+    future:
+      fast_search_header: "Быстрый поиск"
+      fast_search: 
+        "Для поиска поезда Вам достаточно указать 
+        начальный и конечный пункты маршрута.
+        Если Вы нашли подходящий поезд, 
+        тогда Вы покупаете билет (необходимо зарегистрироваться)"
+      responsive_interface_header: "Удобный интерфейс"
+      responsive_interface: 
+        "Наш интерфейс прост и выполнен с использованием элементов 
+        и принципов Материального Дизайна. 
+        Это позволяет Вам покупать билеты с используя 
+        планшетное устройство или мобильный телефон."
+      easy_to_use_header: "Простота работы"
+      easy_to_use: 
+        "После покупки все Ваши билеты сохраняются в личном кабинете 
+        и доступны в любое время (необходимо зарегистрироваться)"
+  layouts: 
+    footer:
+      about_header: "О проекте" 
+      about: 
+        "Это учебный проект демонстрирующий разработку на языке Ruby
+        и фреймворке Rails." 
+      use_materialize: "Приложение использует"
+      source: "Исходный код"
+      contacts: "Контакты"
+    navbar:
+      sign_in: "Вход"
+      sign_out: "Выход"
+    navlink:
+      search: "Поиск"
+      tickets: "Билеты"
+      stations: "Станции"
+      trains: "Поезда"
+      routes: "Маршруты"
+      carriages: "Вагоны"
+      users: "Пользователи"

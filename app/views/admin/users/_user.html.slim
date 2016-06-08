@@ -1,7 +1,8 @@
 h4 = user.name
 
 p 
-  'Tickets:
+  = t('.tickets')
+  ':
   - if user.tickets.empty?
       'none
   - else
@@ -11,5 +12,5 @@ p
               =< link_to "№ #{ticket.id}", ticket_path(ticket) 
 
 p 
-  =< link_to 'Edit', edit_admin_user_path(user)
-  =< link_to 'Destroy', admin_user_path(user), data: {confirm: 'Are you sure?'}, method: :delete
+  =< link_to t('common.edit'), edit_admin_user_path(user)
+  =< link_to t('common.destroy'), admin_user_path(user), data: {confirm: t('admin.users.common.confirm')}, method: :delete

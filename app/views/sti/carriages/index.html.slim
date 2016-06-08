@@ -1,9 +1,9 @@
-h3 Listing carriages
+h3 = t('.title', type: i18n_type(@type))
 
 table.striped
   thead
     tr
-      th Number
+      th = t('activerecord.attributes.carriage.number')
       th
       th
       th
@@ -12,6 +12,6 @@ table.striped
     = render partial: 'carriages', collection: @carriages.train_order, as: 'carriage'
 
 p 
-  = link_to 'See all carriages', sti_carriage_helper_path, class: 'btn' 
-  =< link_to "New #{@type}", sti_carriage_helper_path(@type, nil, :new), class: 'btn'
+  = link_to t('.see_all_carriages'), sti_carriage_helper_path, class: 'btn' 
+  =< link_to t('.new', type: i18n_type(@type)), sti_carriage_helper_path(@type, nil, :new), class: 'btn'
   / # p = link_to 'New Carriage', new_carriage_path, class: 'btn'
