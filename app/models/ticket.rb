@@ -11,4 +11,21 @@ class Ticket < ActiveRecord::Base
             :start_station, 
             :end_station,
             presence: true
+
+  after_create :send_create_notification
+  after_destroy :send_destroy_notification
+
+  def route_name
+    "#{start_station.title} - #{end_station.title}"
+  end 
+
+  private
+
+  def send_create_notification
+    TicketsMailer.create(self.user, self).deliver_now
+  end 
+
+  def send_destroy_notification
+    TicketsMailer.destroy(self.user, self).deliver_now
+  end          
 end

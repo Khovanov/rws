@@ -1,0 +1,9 @@
+p #{t('common.hi')}, #{@user.name}!
+
+p #{t('.ticket_on_route')} #{@ticket.route_name}.
+
+p #{t('.see_ticket')} #{link_to(t('common.here'), @ticket)}
+
+p 
+  = t('tickets_mailer.common.see_tickets_list') 
+  =< link_to t('common.here'), tickets_url 

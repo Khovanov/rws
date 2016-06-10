@@ -30,6 +30,8 @@ ru:
     back: "Назад"
     update: "Изменить"
     not_set: "Не указано"
+    here: "здесь"
+    hi: "Привет"
 
   searches:
     form:
@@ -223,3 +225,14 @@ ru:
       routes: "Маршруты"
       carriages: "Вагоны"
       users: "Пользователи"
+
+  tickets_mailer:
+    common:
+      see_tickets_list: "Список всех Ваших билетов"
+    create:
+      subject: "Вы купили билет" 
+      ticket_on_route: "Вы купили билет на маршрут"
+      see_ticket: "Посмотреть билет Вы можете"
+    destroy:
+      subject: "Вы отменили билет" 
+      ticket_on_route: "Вы отменили билет на маршрут"

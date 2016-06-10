@@ -51,6 +51,8 @@ en:
     back: "Back"
     update: "Update"
     not_set: "Not set"
+    here: "here"
+    hi: "Hi"
 
   searches:
     form:
@@ -244,3 +246,14 @@ en:
       routes: "Routes"
       carriages: "Carriages"
       users: "Users"
+
+  tickets_mailer:
+    common:
+      see_tickets_list: "See you list tickets"
+    create:
+      subject: "You bought a ticket" 
+      ticket_on_route: "You bought a ticket on the route"
+      see_ticket: "See you ticket"
+    destroy:
+      subject: "You canceled the ticket" 
+      ticket_on_route: "You canceled the ticket on the route"
