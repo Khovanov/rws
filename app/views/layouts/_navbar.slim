@@ -1,5 +1,5 @@
 header.navbar-fixed role="banner"
-  /! Dropdown Structure 
+  /! Dropdown Structure for Language
   ul.dropdown-content#lang
     li
       a.blue-text href="/?locale=en" En 
@@ -7,22 +7,15 @@ header.navbar-fixed role="banner"
     li
       a.blue-text href="/?locale=ru" Ru
 
+  - if current_user.try(:admin?)
+    /! Dropdown Structure for Admin
+    ul.dropdown-content#admin
+      = render "layouts/navlink_admin"
+
   nav.light-blue.lighten-1 role="navigation"
     .nav-wrapper.container
       a.brand-logo#logo-container href="/" RwS
-      ul.right
-        - if user_signed_in?
-            li
-              = link_to "#{t('.sign_out')} (#{current_user.name})", 
-                  destroy_user_session_path, method: :delete
-        - else
-            li
-              = link_to t('.sign_in'), new_user_session_path
-        /! Dropdown Trigger
-        li.blue
-          a.dropdown-button href="#!" data-activates="lang" 
-            = I18n.locale.capitalize
-            i.material-icons.right arrow_drop_down
+      / ul.right
 
       ul.right.hide-on-med-and-down
         = render "layouts/navlink"

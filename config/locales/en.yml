@@ -236,14 +236,15 @@ en:
       source: "Source"
       contacts: "Contacts"
     navbar:
+    navlink:
       sign_in: "Sign in"
       sign_out: "Sign out"
-    navlink:
       search: "Search"
       tickets: "Tickets"
-      stations: "Stations"
+    navlink_admin:      
       trains: "Trains"
       routes: "Routes"
+      stations: "Stations"
       carriages: "Carriages"
       users: "Users"
 

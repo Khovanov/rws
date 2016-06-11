@@ -215,14 +215,15 @@ ru:
       source: "Исходный код"
       contacts: "Контакты"
     navbar:
+    navlink:
       sign_in: "Вход"
       sign_out: "Выход"
-    navlink:
       search: "Поиск"
       tickets: "Билеты"
-      stations: "Станции"
+    navlink_admin:
       trains: "Поезда"
       routes: "Маршруты"
+      stations: "Станции"
       carriages: "Вагоны"
       users: "Пользователи"
 
