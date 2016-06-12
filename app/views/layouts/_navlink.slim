@@ -1,23 +1,4 @@
 li
   = link_to t('.search'), search_path
 li
-  = link_to t('.tickets'), current_user.try(:admin?) ? admin_tickets_path : tickets_path
-
-- if current_user.try(:admin?)
-    /! Dropdown Trigger Admin
-    li.blue
-      a.dropdown-button href="#!" data-activates="admin" 
-        |Admin
-
-- if user_signed_in?
-    li
-      = link_to "#{t('.sign_out')} (#{current_user.name})", 
-          destroy_user_session_path, method: :delete
-- else
-    li
-      = link_to t('.sign_in'), new_user_session_path
-/! Dropdown Trigger Language
-li.blue
-  a.dropdown-button href="#!" data-activates="lang" 
-    = I18n.locale.capitalize
-    / i.material-icons.right arrow_drop_down
+  = link_to t('.tickets'), tickets_path

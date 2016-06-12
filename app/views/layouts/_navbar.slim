@@ -15,13 +15,29 @@ header.navbar-fixed role="banner"
   nav.light-blue.lighten-1 role="navigation"
     .nav-wrapper.container
       a.brand-logo#logo-container href="/" RwS
-      / ul.right
+      ul.right
+        /! Dropdown Trigger Language
+        li.blue
+          a.dropdown-button href="#!" data-activates="lang" 
+            = I18n.locale.capitalize
+            i.material-icons.right arrow_drop_down
 
       ul.right.hide-on-med-and-down
         = render "layouts/navlink"
+        - if current_user.try(:admin?)
+            /! Dropdown Trigger Admin
+            li
+              a.dropdown-button href="#!" data-activates="admin" 
+                = t('.admin')
+              i.material-icons.right arrow_drop_down
+        = render "layouts/navlink_sign"
 
       ul.side-nav id="nav-mobile"
         = render "layouts/navlink"
+        - if current_user.try(:admin?)
+          li.divider
+          = render "layouts/navlink_admin"
+        = render "layouts/navlink_sign"
 
       a.button-collapse href="#" data-activates="nav-mobile" 
         i.material-icons menu
