@@ -42,7 +42,7 @@ ru:
       departure_time: "Время прибытия"
       buy_ticket: "Купить билет"
     show:
-      title: "Поиск поезда"
+      title: "Поиск"
 
   tickets:
     common:
